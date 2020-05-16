@@ -161,9 +161,12 @@ input[type=submit] {
   }
 
 p {
-    font-size: 15px;
+    font-size: 12px;
     color: gray;
     font-family: sans-serif;
+    margin-right: 90%;     /*abstand nach rechts automatisch ausrichten*/
+    margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
+    width: 55%;
 }
 
 .fa-expand {
@@ -186,10 +189,6 @@ p {
     font-size: 100px;
     margin-right: auto;     /*abstand nach rechts automatisch ausrichten*/
     margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
-}
-
-#bildtransparent:hover {        /*bild transparent machen beim drüberfahren*/
-    opacity: 0.7;
 }
 
 .row {
