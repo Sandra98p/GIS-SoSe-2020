@@ -1,0 +1,228 @@
+.background {
+    background: rgb(255, 216, 216);
+    padding: 20px 10px 50px 10px;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: 0; 
+    width: auto;
+    float: center;
+}
+
+
+#topnav {
+    list-style-type: none;
+    padding: 5px;                           /*Größe der Umrandung/Hintergrund, wo Text drauf ist*/
+    background: black;
+    position: fixed;
+    top: 0px;
+    width: 205px;                          /*Breite des Hintergrund, wo Schrift drauf ist*/
+    height: 12px;                          /*Höhe des Hintergrund, wo Schrift drauf ist*/
+    text-align: center;                    /*schrift in der liste zentriert*/
+    margin-top: 0px;                         /*ganz oben am rand*/
+    font-size: 10px;                       /*schriftgrößen mit px angeben*/
+    border-radius: 0px 0px 4px 4px;        /*Ecken von der Navigation sind abgerundet*/
+    right: 16%;                            /*navigation von der rechten seite*/
+}
+
+#topnav a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif; 
+    font-size: 10px;   
+    /*border-right-style: solid;*/          /*erzeugt Linie auf der rechten Seite des Links*/
+    margin-right: 1px;                      /*ordnet Text zentriert an, Rand rechts*/
+    margin-left: 1px;                       /*ordnet Text zentriert an, Rand links*/
+    display: inline-block;
+}
+
+#topnav a:hover {                           /*färbt Verlinkungen in Navigation gelb, wenn die Maus sich darüber befindet*/
+    transform: scale(1.1);                  /*hervorheben wenn man drüber schwebt*/
+}
+
+#topnav a.activesite {                      /*zeigt aktuelle seite grau an*/
+    color: rgb(163, 163, 163);
+}
+
+
+.fa {                           /*alle Icons bearbeiten*/
+    padding: 5px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.fa:hover {                     /*beim drüber gehen wird es heller*/
+    opacity: 0.7;
+    transform: scale(1.5);
+}
+
+
+.fa-instagram {                 /*Instagram Icon wird verändert*/
+    background: rgb(255, 216, 216);
+    color: rgb(250, 135, 154);
+  
+}
+
+.fa-envelope {                  /*EMail Icon wird verändert*/
+    background: rgb(255, 216, 216);
+    color: rgb(255, 153, 170);
+}
+
+.fa-snapchat-square {           /*Snapchat Icon wird verändert*/
+    background: rgb(255, 216, 216);
+    color: rgb(255, 153, 170);
+}
+
+#header-headline {
+    color: white;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+#second-headline {
+    color: white;
+    font-style: italic;
+}
+
+h3 {
+    color: rgb(82, 82, 82);
+    text-decoration-line: underline;
+    font-size: 15px;
+}
+
+h2 {
+    color: palevioletred;
+    font-size: 30px;
+    margin-right: auto;     /*abstand nach rechts automatisch ausrichten*/
+    margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
+}
+
+h4 {
+    color: palevioletred;
+    font-size: 30px;
+    margin-right: 90%;     /*abstand nach rechts automatisch ausrichten*/
+    margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
+}
+
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    background-image: url("bg.png");
+    width: 800px;
+    text-align: center;     /*schrift im body zentriert*/
+    margin-right: auto;     /*abstand nach rechts automatisch ausrichten*/
+    margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
+    margin-top: 0px;        /*bis ganz nach oben an den rand*/
+    margin-bottom: 0px;     
+    display: block;
+}
+
+
+input[type=text], select{
+    width: 40%;
+    padding: 8px 10px;
+    margin-right: 60%;     /*abstand nach rechts automatisch ausrichten*/
+    margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
+    display: block;
+    background-color: rgb(204, 204, 204);
+    border: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+textarea {
+    width: 55%;
+    padding: 8px 10px;
+    margin-right: 60%;     /*abstand nach rechts automatisch ausrichten*/
+    margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
+    display: block;
+    background-color: rgb(204, 204, 204);
+    border: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 13px;
+    resize: horizontal; 
+}
+
+input[type=submit] {
+    background-color: rgb(204, 204, 204);
+    padding: 8px 10px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-right: 90%;     /*abstand nach rechts automatisch ausrichten*/
+    margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
+  }
+
+  input[type=submit]:hover {
+    background-color: rgb(172, 172, 172);
+  }
+
+p {
+    font-size: 15px;
+    color: gray;
+    font-family: sans-serif;
+}
+
+.fa-expand {
+    color: pink;
+    font-size: 30px;
+}
+
+.fa-angle-double-up {
+    color: pink;
+    font-size: 24px;
+}
+
+.website-icon {
+    font-size: 100px;
+    margin-right: auto;     /*abstand nach rechts automatisch ausrichten*/
+    margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
+}
+
+.swipeup {
+    font-size: 100px;
+    margin-right: auto;     /*abstand nach rechts automatisch ausrichten*/
+    margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
+}
+
+#bildtransparent:hover {        /*bild transparent machen beim drüberfahren*/
+    opacity: 0.7;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 20%;
+    max-width: 24%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 900px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

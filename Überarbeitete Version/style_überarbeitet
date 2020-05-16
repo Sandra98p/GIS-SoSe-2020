@@ -1,0 +1,54 @@
+
+
+ul {
+    
+    list-style-type: none;
+    padding: 3px;
+    background: black;
+    position: fixed;
+    top: 0;
+    width: 15%;
+    height: 3%;
+    text-align: center;   /*schrift in der liste zentriert*/
+    margin-top: 0;        /*ganz oben am rand*/
+    font-size: 8px;          /* Schriftgrößen mit px angeben*/
+    right: 25%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+a:hover {                 /* färbt Links in Navigation rot, wenn die Maus sich darüber befindet */
+  color: red;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    border-right-style: solid; /*erzeugt Linie auf der rechten Seite des Links*/
+    border-color: white;
+    border-right-width: thin;
+    margin-left: 5px;
+}
+
+#contact{             /*spricht den Link contact an und versteckt die Rechte Randlinie*/
+    border: hidden;
+}
+
+li {
+    color: white;
+    font-size: 8px; /*schriftgröße*/
+    
+    
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    background-image: url("https://gabriel-rausch.github.io/EIA1-SoSe20/L03/task_material/images/bg.png");
+    width: 800px;
+    text-align: center;     /*schrift im body zentriert*/
+    margin-right: auto;     /*abstand nach rechts automatisch ausrichten*/
+    margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/             
+    
+}
