@@ -154,13 +154,22 @@ input[type=submit] {
     cursor: pointer;
     margin-right: 90%;     /*abstand nach rechts automatisch ausrichten*/
     margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
-  }
+}
 
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: rgb(172, 172, 172);
-  }
+}
 
 p {
+    font-size: 12px;
+    color: gray;
+    font-family: sans-serif;
+    margin-right: auto;     /*abstand nach rechts automatisch ausrichten*/
+    margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
+    width: 55%;
+}
+
+.nachricht {
     font-size: 12px;
     color: gray;
     font-family: sans-serif;
@@ -189,6 +198,17 @@ p {
     font-size: 100px;
     margin-right: auto;     /*abstand nach rechts automatisch ausrichten*/
     margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
+}
+
+.background2 {
+    background: white;
+    margin-right: auto;     /*abstand nach rechts automatisch ausrichten*/
+    margin-left: auto;      /*abstand nach rechts automatisch ausrichten*/
+    padding: 20px 10px 50px 10px;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: 0; 
+    width: auto;
+    float: center;
 }
 
 .row {
