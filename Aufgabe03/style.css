@@ -17,7 +17,7 @@
     width: 205px;                          /*Breite des Hintergrund, wo Schrift drauf ist*/
     height: 12px;                          /*Höhe des Hintergrund, wo Schrift drauf ist*/
     text-align: center;                    /*schrift in der liste zentriert*/
-    margin-top: 0px;                         /*ganz oben am rand*/
+    margin-top: 0px;                       /*ganz oben am rand*/
     font-size: 10px;                       /*schriftgrößen mit px angeben*/
     border-radius: 0px 0px 4px 4px;        /*Ecken von der Navigation sind abgerundet*/
     right: 16%;                            /*navigation von der rechten seite*/
