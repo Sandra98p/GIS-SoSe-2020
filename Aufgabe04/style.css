@@ -261,7 +261,7 @@
     
     
     .product-grid { 
-        margin-right: 20px;
+        margin-right: 10px;
         margin-left: 20px;
     }
     
@@ -845,13 +845,13 @@
     
     
     .übersicht-grid {
-        margin-right: 90px;
-        margin-left: 90px;
+        margin-right: auto;
+        margin-left: auto;
     }
     
     .übersicht-row {                                           /*Element ist da drauf*/
         display: grid;
-        grid-template-columns: 250px 200px 250px;
+        grid-template-columns: 250px 200px;
         background-color: white;                            /*Hintergrund des Elements*/
         padding: 50px;
         text-align: center;
@@ -881,7 +881,7 @@
         padding-right: 10px;
         padding-bottom: 10px;
         padding-left: 10px;
-        width: 400px;
+        width: 200px;
         text-align: left;
         margin-left: 200px;
         border-color: black; 
@@ -1037,7 +1037,7 @@
         list-style-type: none;
         background: rgb(204, 204, 204);
         padding: 10px;
-        top:100px;
+        top: 100px;
     }
     
     #untermenue-buttons {                    /*Hintergrund der Links im Untermenü*/
@@ -1080,9 +1080,9 @@
         display: none;
         position: absolute;
         background-color: #f9f9f9;
-        min-width: 160px;
+        min-width: 150px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 12px 16px;
+        padding: 12px 15px;
         z-index: 1;
     }
       
@@ -1225,6 +1225,7 @@
     h2 {
         color: rgb(167, 167, 167);
         font-size: 12px;
+        margin-top: 50px;
     }
     
     p {
@@ -1246,8 +1247,8 @@
     
     
     .product-grid { 
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: auto;
+        margin-left: auto;
     }
     
     .product-row {                                           /*Element ist da drauf*/
@@ -1317,6 +1318,7 @@
         padding: 10px;
         font-size: 15px;
         text-align: center;
+       
     }
     
     .kategorie-container {                                     /*Umrandung*/
@@ -1339,16 +1341,17 @@
     
     
     .übersicht-grid {
-        margin-right: 90px;
-        margin-left: 90px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     
     .übersicht-row {                                           /*Element ist da drauf*/
         display: grid;
-        grid-template-columns: 250px 200px 250px;
+        grid-template-columns: 80px 80px;
         background-color: white;                            /*Hintergrund des Elements*/
-        padding: 50px;
+        padding: 10px;
         text-align: center;
+        margin-top: 70px;
     }
     
     .übersicht-container {                                     /*Umrandung*/
@@ -1357,40 +1360,41 @@
     
     .übersicht-image {
         text-align: center;
+        width: 90px;
     }
     
     .übersicht-name {
-        padding-top: 15px;
+        padding-top: 10px;
         padding-right: 0px;
         padding-bottom: 0px;
         padding-left: 0px;
-        margin-left: 100%;
+        margin-left: 60%;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 12px;
         text-decoration: underline;
     }
     
     .übersicht-beschreibung {
-        padding-top: 10px;
+        padding-top: 5px;
         padding-right: 10px;
         padding-bottom: 10px;
         padding-left: 10px;
-        width: 400px;
+        width: 50px;
         text-align: left;
-        margin-left: 200px;
+        margin-left: 40px;
         border-color: black; 
         display: block; 
         border: none;
     }
     
     .übersicht-price {
-        padding-top: 15px;
+        padding-top: 5px;
         padding-right: 0px;
         padding-bottom: 0px;
         padding-left: 0px;
         text-align: center;
-        font-size: 15px;
-        margin-left: 280px;
+        font-size: 12px;
+        margin-left: 70px;
     }
     
     .link-anleitung {
@@ -1426,10 +1430,10 @@
     .zumeinkaufswagen {             /*auf Übersichtsseite, wo man nur das eine Produkt sieht */
         color: black; 
         border: 2px solid rgba(223, 223, 223, 0.904);
-        font-size: 15px;
-        padding: 10px;
-        width: 190px;
-        margin-left: 200px;
+        font-size: 12px;
+        padding: 5px;
+        width: 110px;
+        margin-left: 50px;
     }
     
     .zumeinkaufswagen:hover {
@@ -1454,10 +1458,10 @@
     .zurwunschliste {                  /*auf Übersichtsseite, wo man nur das eine Produkt sieht */
         color: black; 
         border: 2px solid rgba(223, 223, 223, 0.904);
-        font-size: 15px;
-        padding: 10px;
-        width: 190px;
-        margin-left: 200px;
+        font-size: 12px;
+        padding: 5px;
+        width: 110px;
+        margin-left: 50px;
     }
     
     .zurwunschliste:hover {
