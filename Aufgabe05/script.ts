@@ -1,1 +1,4 @@
-console.log("Hallo liebe Leute");
+console.log("Hallo liebe Studies");
+function ShowTime(toDayDate: Date){
+
+}

@@ -1,3 +1,5 @@
-"use strict";
-console.log("Hallo liebe Leute");
+let wunschlisteButton = document.getElementsByClassName("wunschliste")
+console.log(wunschlisteButton);
+
+
 //# sourceMappingURL=script.js.map

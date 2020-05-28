@@ -1,0 +1,1295 @@
+
+@media screen and (min-width: 1025px){          /*große Displays*/
+    body {
+        list-style-type: none;
+        font-family: monospace;
+        font-size: 15px;
+        background-color: rgb(255, 255, 255);
+        width: auto;
+        text-align: center;                     /*schrift im body zentriert*/
+        margin-top: 0px;    
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;  
+        display: block;
+    }
+    
+    .full-header {
+        background: rgb(255, 255, 255);
+        margin-top: 0px; 
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 20px;
+        width: auto;
+        height: 200px;
+    }
+    
+    .top-header {
+        width: 100%;
+    }
+    
+    .second-header {
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    #websitename {                          
+        color: rgb(219, 168, 0);
+        font-family: monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        text-align: center;  
+        font-size: 40px;
+    }
+    
+    
+    #hauptmenue-buttons {                   /*Hintergrund der Links im menü*/
+        list-style-type: none;
+        background: rgb(204, 204, 204);
+        padding: 10px;
+    
+    }
+    
+    #untermenue-buttons {                    /*Hintergrund der Links im Untermenü*/
+        list-style-type: none;
+        background: rgb(204, 204, 204);
+        padding: 10px;
+     
+    }
+    
+    
+    #hauptmenue-buttons a{                  /*Links im Hauptmenü*/
+        text-decoration: none;
+        font-family: Verdana;
+        color: rgb(136, 136, 136);
+    }
+    
+    #untermenue-buttons a{                  /*Links im Untermenü*/
+        text-decoration: none;
+        font-family: Verdana;
+        color: rgb(136, 136, 136);
+    }
+    
+    
+    #hauptmenue-buttons a:hover {               /*färbt Verlinkungen in Navigation schwarz, wenn die Maus sich darüber befindet*/
+        color: black;                         /*hervorheben wenn man drüber schwebt*/
+    }
+    
+    #hauptmenue-buttons a.activesite {          /*zeigt aktuelle seite schwarz an*/
+        color: rgb(61, 61, 61);
+    }
+    
+    
+    
+    .dropdown {                             /*Aufklappmenü*/
+        position: relative;
+        display: inline-block;
+    }
+      
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+      
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    
+    
+    
+    
+    .fa-heart {                               /*Icon*/
+        color: rgb(136, 136, 136);
+        font-size: 30px;
+    }
+    
+    .fa-shopping-cart {                       /*Icon*/
+        color: rgb(136, 136, 136);
+        font-size: 30px;
+    }
+    
+    .fa-user {                                /*Icon*/
+        color: rgb(136, 136, 136);
+        font-size: 30px;
+    }
+    
+    .fa-arrow-up {                            /*Icon*/
+        font-size: 60px;
+        color: rgb(136, 136, 136);
+    }
+    
+    .nachoben {
+        text-align: center; 
+    }
+    
+    
+    
+    
+    
+    
+    .slider-holder{                                 /*Hintergrund insgesamt*/
+        width: 300px;
+        height: 430px;
+        background-color: rgb(255, 255, 157);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .slider-change:hover{
+        color:#333;
+        box-shadow:0px 0px 35px #333;
+    }
+           
+    .image-holder{                                  /*bildhintergrund*/
+        width: 2400px;
+        background-color: rgb(255, 148, 148);
+        height: 430px;                              /*höhe der buttons zum wechseln*/
+        clear: both;
+        position: relative;
+               
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+    }
+           
+    .slider-image{
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+           
+    #slider-image-Fotohalter:target ~ .image-holder{               /*1. bild*/
+        left: 0px;
+    }
+           
+    #slider-image-Fotohalter_gitter:target ~ .image-holder{        /*wie weit slidet das bild nach links*/
+        left: -300px;
+    }
+          
+    #slider-image-Holz_aufsteller:target ~ .image-holder{
+        left: -600px;
+    }
+    
+    #slider-image-Holz_pflanzenständer2:target ~ .image-holder{
+        left: -900px;
+    }
+    
+    #slider-image-Palette_gartenbank:target ~ .image-holder{
+        left: -1200px;
+    }
+    
+    #slider-image-Paletten_Blumen:target ~ .image-holder{
+        left: -1500px;
+    }
+    
+    #slider-image-Vase_reagenzglas:target ~ .image-holder{
+        left: -1800px;
+    }
+    
+    #slider-image-vase-schrift:target ~ .image-holder{
+        left: -2100px;
+    }
+    
+    .button-holder{
+        position: relative;
+        top: -20px;
+    }
+           
+    .slider-change{
+        display: inline-block;
+        height: 8px;
+        width: 8px;
+        border-radius: 1px;
+        background-color: rgb(168, 129, 0);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    h1 {
+        color: rgb(167, 167, 167);
+        font-size: 15px;
+        text-decoration: underline;
+    }
+    
+    
+    
+    h2 {
+        color: rgb(167, 167, 167);
+        font-size: 12px;
+    }
+    
+    p {
+        color: rgb(202, 156, 5);
+        font-size: 15px;
+    }
+      
+    h3 {
+        color: black;
+        font-size: 20px;
+    }
+    
+    h4 {
+        color: rgb(202, 156, 5);
+        font-size: 15px;
+    }
+    
+    
+    
+    
+    .product-grid { 
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .product-row {                                           /*Element ist da drauf*/
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: rgb(255, 255, 255);              /*Hintergrund des Elements*/
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .product-container {                                      /*Umrandung*/
+        border: 1px solid rgba(255, 255, 255, 0.507);
+        padding-top: 20px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .product-image {
+        text-align: center;
+    }
+    
+    .product-status {
+        font-size: 12px;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+    }
+    
+    .product-name {
+        padding: 15px 0px 0px;
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+       
+    }
+    
+    .product-price {
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+        font-size: 12px;
+       
+    }
+    
+    
+    
+    
+    
+    
+    .kategorie-grid {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .kategorie-row {                                           /*Element ist da drauf*/
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: rgb(255, 255, 255);                            /*Hintergrund des Elements*/
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .kategorie-container {                                     /*Umrandung*/
+        border: 1px solid rgba(255, 255, 255, 0.507);
+    }
+    
+    .kategorie-image {
+        text-align: center;
+    }
+    
+    .kategorie-name {
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+       
+    }
+
+    .kategorie-beschreibung {
+        padding: 10px;
+        width: auto;
+        text-align: center;
+        border-color: black; 
+        display: block; 
+        border: none;
+    }
+    
+    .link-anleitung {
+        padding: 10px;
+        text-align: center;
+        border-color: black;
+        height: 60px; /* Setzt die Höhe des Feldes auf 60 Pixel */
+        font-size: 15px; /* Setzt die Schriftgröße auf 40 Pixel. */
+    }
+    
+    
+    
+    
+    
+    .einkaufswagen {                /*auf Produktseite, wo man alle Produkte sieht*/
+        margin: auto;
+        width: 110px;
+        text-align: center;
+        padding: 10px;
+        border: 2px solid rgba(223, 223, 223, 0.904);
+        font-size: 14px;
+    }
+    
+    .einkaufswagen:hover {
+        background-color: rgba(223, 223, 223, 0.795);
+    }
+    
+
+    
+    .wunschliste {                      /*auf Produktseite, wo man alle Produkte sieht*/
+        margin: auto;
+        width: 25px;
+        text-align: center;
+        border: none;
+        font-size: 14px;
+    }
+    
+    .wunschliste:hover {
+        background-color: rgba(223, 223, 223, 0.795);
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px){           /*mittlere Displays - tablet*/
+    body {
+        list-style-type: none;
+        font-family: monospace;
+        font-size: 15px;
+        background-color: rgb(255, 255, 255);
+        width: auto;
+        text-align: center;                     /*schrift im body zentriert*/
+        margin-top: 0px;    
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;  
+        display: block;
+    }
+    
+    .full-header {
+        background: rgb(255, 255, 255);
+        margin-top: 0px; 
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 20px;
+        width: auto;
+        height: 200px;
+    }
+    
+    .top-header {
+        width: 100%;
+    }
+    
+    .second-header {
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    #websitename {                          
+        color: rgb(219, 168, 0);
+        font-family: monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        text-align: center;  
+        font-size: 40px;
+    }
+    
+    
+    #hauptmenue-buttons {                   /*Hintergrund der Links im menü*/
+        list-style-type: none;
+        background: rgb(204, 204, 204);
+        padding: 10px;
+    
+    }
+    
+    #untermenue-buttons {                    /*Hintergrund der Links im Untermenü*/
+        list-style-type: none;
+        background: rgb(204, 204, 204);
+        padding: 10px;
+     
+    }
+    
+    
+    #hauptmenue-buttons a{                  /*Links im Hauptmenü*/
+        text-decoration: none;
+        font-family: Verdana;
+        color: rgb(136, 136, 136);
+    }
+    
+    #untermenue-buttons a{                  /*Links im Untermenü*/
+        text-decoration: none;
+        font-family: Verdana;
+        color: rgb(136, 136, 136);
+    }
+    
+    
+    #hauptmenue-buttons a:hover {               /*färbt Verlinkungen in Navigation schwarz, wenn die Maus sich darüber befindet*/
+        color: black;                         /*hervorheben wenn man drüber schwebt*/
+    }
+    
+    #hauptmenue-buttons a.activesite {          /*zeigt aktuelle seite schwarz an*/
+        color: rgb(61, 61, 61);
+    }
+    
+    
+    
+    .dropdown {                             /*Aufklappmenü*/
+        position: relative;
+        display: inline-block;
+    }
+      
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+      
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    
+    
+    
+    
+    .fa-heart {                               /*Icon*/
+        color: rgb(136, 136, 136);
+        font-size: 30px;
+    }
+    
+    .fa-shopping-cart {                       /*Icon*/
+        color: rgb(136, 136, 136);
+        font-size: 30px;
+    }
+    
+    .fa-user {                                /*Icon*/
+        color: rgb(136, 136, 136);
+        font-size: 30px;
+    }
+    
+    .fa-arrow-up {                            /*Icon*/
+        font-size: 60px;
+        color: rgb(136, 136, 136);
+    }
+    
+    .nachoben {
+        text-align: center; 
+    }
+    
+    
+    
+    
+    
+    
+    .slider-holder{                                 /*Hintergrund insgesamt*/
+        width: 300px;
+        height: 430px;
+        background-color: rgb(255, 255, 157);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .slider-change:hover{
+        color:#333;
+        box-shadow:0px 0px 35px #333;
+    }
+           
+    .image-holder{                                  /*bildhintergrund*/
+        width: 2400px;
+        background-color: rgb(255, 148, 148);
+        height: 430px;                              /*höhe der buttons zum wechseln*/
+        clear: both;
+        position: relative;
+               
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+    }
+           
+    .slider-image{
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+           
+    #slider-image-Fotohalter:target ~ .image-holder{               /*1. bild*/
+        left: 0px;
+    }
+           
+    #slider-image-Fotohalter_gitter:target ~ .image-holder{        /*wie weit slidet das bild nach links*/
+        left: -300px;
+    }
+          
+    #slider-image-Holz_aufsteller:target ~ .image-holder{
+        left: -600px;
+    }
+    
+    #slider-image-Holz_pflanzenständer2:target ~ .image-holder{
+        left: -900px;
+    }
+    
+    #slider-image-Palette_gartenbank:target ~ .image-holder{
+        left: -1200px;
+    }
+    
+    #slider-image-Paletten_Blumen:target ~ .image-holder{
+        left: -1500px;
+    }
+    
+    #slider-image-Vase_reagenzglas:target ~ .image-holder{
+        left: -1800px;
+    }
+    
+    #slider-image-vase-schrift:target ~ .image-holder{
+        left: -2100px;
+    }
+    
+    .button-holder{
+        position: relative;
+        top: -20px;
+    }
+           
+    .slider-change{
+        display: inline-block;
+        height: 8px;
+        width: 8px;
+        border-radius: 1px;
+        background-color: rgb(168, 129, 0);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    h1 {
+        color: rgb(167, 167, 167);
+        font-size: 15px;
+        text-decoration: underline;
+    }
+    
+    
+    
+    h2 {
+        color: rgb(167, 167, 167);
+        font-size: 12px;
+    }
+    
+    p {
+        color: rgb(202, 156, 5);
+        font-size: 15px;
+    }
+      
+    h3 {
+        color: black;
+        font-size: 20px;
+    }
+    
+    h4 {
+        color: rgb(202, 156, 5);
+        font-size: 15px;
+    }
+    
+    
+    
+    
+    .product-grid { 
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .product-row {                                           /*Element ist da drauf*/
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(255, 255, 255);                            /*Hintergrund des Elements*/
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .product-container {                                     /*Umrandung*/
+        border: 1px solid rgba(255, 255, 255, 0.507);
+        margin-top: 20px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .product-image {
+        text-align: center;
+    }
+    
+    .product-status {
+        font-size: 12px;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+    }
+    
+    .product-name {
+        padding: 15px 0px 0px;
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    
+    .product-price {
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .product-beschreibung {
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        width: auto;
+        text-align: center;
+        border-color: black; 
+        display: block; 
+        border: none;
+    }
+    
+    
+    
+    
+    
+    
+    .kategorie-grid {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    .kategorie-row {                                           /*Element ist da drauf*/
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(255, 255, 255);                            /*Hintergrund des Elements*/
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+     
+    }
+    
+    .kategorie-container {                                     /*Umrandung*/
+        border: 1px solid rgba(255, 255, 255, 0.507);
+    }
+    
+    .kategorie-image {
+        text-align: center;
+    }
+    
+    .kategorie-name {
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+       
+    }
+
+    .kategorie-beschreibung {
+        padding: 10px;
+        width: auto;
+        text-align: center;
+        border-color: black; 
+        display: block; 
+        border: none;
+    }
+    
+ 
+    
+    .link-anleitung {
+        padding: 15px 0px 0px;
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+        margin-left: 100%;
+        /*font-size: 15px;*/
+        border-color: black;
+        height: 60px; /* Setzt die Höhe des Feldes auf 60 Pixel */
+        font-size: 15px; /* Setzt die Schriftgröße auf 40 Pixel. */
+    }
+    
+    
+    
+    .einkaufswagen {                /*auf Produktseite, wo man alle Produkte sieht*/
+        margin: auto;
+        width: 110px;
+        text-align: center;
+        padding: 10px;
+        border: 2px solid rgba(223, 223, 223, 0.904);
+        font-size: 14px;
+    }
+    
+    .einkaufswagen:hover {
+        background-color: rgba(223, 223, 223, 0.795);
+    }
+    
+    
+    
+    
+    .wunschliste {                      /*auf Produktseite, wo man alle Produkte sieht*/
+        margin: auto;
+        width: 25px;
+        text-align: center;
+        border: none;
+        font-size: 14px;
+    }
+    
+    .wunschliste:hover {
+        background-color: rgba(223, 223, 223, 0.795);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){           /*kleine Displays - handys*/
+    body {
+        list-style-type: none;
+        font-family: monospace;
+        font-size: 15px;
+        background-color: rgb(255, 255, 255);
+        width: auto;
+        text-align: center;                     /*schrift im body zentriert*/
+        margin-top: 0px;    
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;  
+        display: block;
+    }
+    
+    .full-header {
+        background: rgb(255, 255, 255);
+        margin-top: 0px; 
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 20px;
+        width: auto;
+        height: 200px;
+    }
+    
+    .top-header {
+        width: 100%;
+    }
+    
+    .second-header {
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    #websitename {                          
+        color: rgb(219, 168, 0);
+        font-family: monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        text-align: center;  
+        font-size: 30px;
+    }
+    
+    
+    #hauptmenue-buttons {                   /*Hintergrund der Links im menü*/
+        list-style-type: none;
+        background: rgb(204, 204, 204);
+        padding: 10px;
+        top: 100px;
+    }
+    
+    #untermenue-buttons {                    /*Hintergrund der Links im Untermenü*/
+        list-style-type: none;
+        background: rgb(204, 204, 204);
+        padding: 10px;
+        top: 200px;
+    }
+    
+    
+    #hauptmenue-buttons a{                  /*Links im Hauptmenü*/
+        text-decoration: none;
+        font-family: Verdana;
+        color: rgb(136, 136, 136);
+    }
+    
+    #untermenue-buttons a{                  /*Links im Untermenü*/
+        text-decoration: none;
+        font-family: Verdana;
+        color: rgb(136, 136, 136);
+    }
+    
+    
+    #hauptmenue-buttons a:hover {               /*färbt Verlinkungen in Navigation schwarz, wenn die Maus sich darüber befindet*/
+        color: black;                         /*hervorheben wenn man drüber schwebt*/
+    }
+    
+    #hauptmenue-buttons a.activesite {          /*zeigt aktuelle seite schwarz an*/
+        color: rgb(61, 61, 61);
+    }
+    
+    
+    
+    .dropdown {                             /*Aufklappmenü*/
+        position: relative;
+        display: inline-block;
+    }
+      
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 15px;
+        z-index: 1;
+    }
+      
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    
+    
+    
+    
+    .fa-heart {                               /*Icon*/
+        color: rgb(136, 136, 136);
+        font-size: 30px;
+    }
+    
+    .fa-shopping-cart {                       /*Icon*/
+        color: rgb(136, 136, 136);
+        font-size: 30px;
+    }
+    
+    .fa-user {                                /*Icon*/
+        color: rgb(136, 136, 136);
+        font-size: 30px;
+    }
+    
+    .fa-arrow-up {                            /*Icon*/
+        font-size: 60px;
+        color: rgb(136, 136, 136);
+    }
+    
+    .nachoben {
+        text-align: center; 
+    }
+    
+    
+    
+    
+    
+    
+    .slider-holder{                                 /*Hintergrund insgesamt*/
+        width: 250px;
+        height: 400px;
+        background-color: rgb(255, 255, 157);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .slider-change:hover{
+        color:#333;
+        box-shadow:0px 0px 35px #333;
+    }
+           
+    .image-holder{                                  /*bildhintergrund*/
+        width: 2400px;
+        background-color: rgb(255, 148, 148);
+        height: 430px;                              /*höhe der buttons zum wechseln*/
+        clear: both;
+        position: relative;
+               
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+    }
+           
+    .slider-image{
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+           
+    #slider-image-Fotohalter:target ~ .image-holder{               /*1. bild*/
+        left: 0px;
+    }
+           
+    #slider-image-Fotohalter_gitter:target ~ .image-holder{        /*wie weit slidet das bild nach links*/
+        left: -300px;
+    }
+          
+    #slider-image-Holz_aufsteller:target ~ .image-holder{
+        left: -600px;
+    }
+    
+    #slider-image-Holz_pflanzenständer2:target ~ .image-holder{
+        left: -900px;
+    }
+    
+    #slider-image-Palette_gartenbank:target ~ .image-holder{
+        left: -1200px;
+    }
+    
+    #slider-image-Paletten_Blumen:target ~ .image-holder{
+        left: -1500px;
+    }
+    
+    #slider-image-Vase_reagenzglas:target ~ .image-holder{
+        left: -1800px;
+    }
+    
+    #slider-image-vase-schrift:target ~ .image-holder{
+        left: -2100px;
+    }
+    
+    .button-holder{
+        position: relative;
+        top: -20px;
+    }
+           
+    .slider-change{
+        display: inline-block;
+        height: 8px;
+        width: 8px;
+        border-radius: 1px;
+        background-color: rgb(168, 129, 0);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    h1 {
+        color: rgb(167, 167, 167);
+        font-size: 15px;
+        text-decoration: underline;
+        margin-top: 50px;
+    }
+    
+    
+    
+    h2 {
+        color: rgb(167, 167, 167);
+        font-size: 12px;
+        margin-top: 50px;
+    }
+    
+    p {
+        color: rgb(202, 156, 5);
+        font-size: 15px;
+    }
+      
+    h3 {
+        color: black;
+        font-size: 20px;
+    }
+    
+    h4 {
+        color: rgb(202, 156, 5);
+        font-size: 15px;
+    }
+    
+    
+    
+    
+    .product-grid { 
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .product-row {                                           /*Element ist da drauf*/
+        display: grid;
+        grid-template-columns: auto;
+        background-color: rgb(255, 255, 255);              /*Hintergrund des Elements*/
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .product-container {                                     /*Umrandung*/
+        border: 1px solid rgba(255, 255, 255, 0.507);
+        padding-top: 20px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .product-image {
+        text-align: center;
+    }
+    
+    .product-status {
+        font-size: 12px;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+    }
+    
+    .product-name {
+        padding: 15px 0px 0px;
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    
+    .product-price {
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .product-beschreibung {
+        padding-top: 5px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        width: auto;
+        text-align: center;
+        border-color: black; 
+        display: block; 
+        border: none;
+    }
+    
+    
+    
+    
+    
+    
+    .kategorie-grid {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .kategorie-row {                                           /*Element ist da drauf*/
+        display: grid;
+        grid-template-columns: auto;                            /*automatisches Anpassen der Elemente an Seite, Untereinander*/
+        background-color: rgb(255, 255, 255);                 /*Hintergrund des Elements*/
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+       
+    }
+    
+    .kategorie-container {                                     /*Umrandung*/
+        border: 1px solid rgba(255, 255, 255, 0.507);
+        padding-top: 20px;
+    }
+    
+    .kategorie-image {
+        text-align: center;
+    }
+    
+    .kategorie-name {
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+       
+    }
+    
+    
+    .link-anleitung {
+        padding-top: 5px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: left;
+        margin-left: 40px;
+        width: 40px;
+        display: block; 
+        border: none;
+        font-size: 12px; /* Setzt die Schriftgröße auf 40 Pixel. */
+    }
+    
+    
+    
+    .einkaufswagen {                /*auf Produktseite, wo man alle Produkte sieht*/
+        margin: auto;
+        width: 110px;
+        text-align: center;
+        padding: 10px;
+        border: 2px solid rgba(223, 223, 223, 0.904);
+        font-size: 14px;
+    }
+    
+    .einkaufswagen:hover {
+        background-color: rgba(223, 223, 223, 0.795);
+    }
+    
+    
+    
+    .wunschliste {                      /*auf Produktseite, wo man alle Produkte sieht*/
+        margin: auto;
+        width: 25px;
+        text-align: center;
+        border: none;
+        font-size: 14px;
+    }
+    
+    .wunschliste:hover {
+        background-color: rgba(223, 223, 223, 0.795);
+    }
+}
