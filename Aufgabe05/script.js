@@ -117,7 +117,7 @@ var Inneneinrichtung3;
         preis: "14.99€"
     };
     let vase2 = {
-        bild: "produktbilder/vase-reagenzglas.html",
+        bild: "produktbilder/vase_reagenzglas.jpg",
         name: "Reagenzglas",
         beschreibung: "Tablett zur Ablage von Fernbedienung, Zeitschrift, etc.",
         preis: "14.99€"
