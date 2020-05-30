@@ -19,7 +19,9 @@
         margin-top: 0px; 
         margin-right: 0px;
         margin-left: 0px;
-        padding: 20px;
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
         width: auto;
         height: 200px;
     }
@@ -104,8 +106,8 @@
     .dropdown:hover .dropdown-content {
         display: block;
     }
-    
-    
+
+
     
     
     
@@ -127,6 +129,7 @@
     .fa-arrow-up {                            /*Icon*/
         font-size: 60px;
         color: rgb(136, 136, 136);
+        position: fixed;
     }
     
     .nachoben {
@@ -174,18 +177,20 @@
     
     .product-row {                                           /*Element ist da drauf*/
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         background-color: rgb(255, 255, 255);              /*Hintergrund des Elements*/
         padding: 10px;
         font-size: 15px;
         text-align: center;
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: auto;
     }
     
     .product-container {                                      /*Umrandung*/
         border: 1px solid rgba(255, 255, 255, 0.507);
         padding-top: 20px;
+        width: auto;
     }
     
     a {
@@ -282,37 +287,6 @@
         border-color: black;
         height: 60px; /* Setzt die Höhe des Feldes auf 60 Pixel */
         font-size: 15px; /* Setzt die Schriftgröße auf 40 Pixel. */
-    }
-    
-    
-    
-    
-    
-    .einkaufswagen {                /*auf Produktseite, wo man alle Produkte sieht*/
-        margin: auto;
-        width: 110px;
-        text-align: center;
-        padding: 10px;
-        border: 2px solid rgba(223, 223, 223, 0.904);
-        font-size: 14px;
-    }
-    
-    .einkaufswagen:hover {
-        background-color: rgba(223, 223, 223, 0.795);
-    }
-    
-
-    
-    .wunschliste {                      /*auf Produktseite, wo man alle Produkte sieht*/
-        margin: auto;
-        width: 25px;
-        text-align: center;
-        border: none;
-        font-size: 14px;
-    }
-    
-    .wunschliste:hover {
-        background-color: rgba(223, 223, 223, 0.795);
     }
    
 }
@@ -634,41 +608,7 @@
         font-size: 15px; /* Setzt die Schriftgröße auf 40 Pixel. */
     }
     
-    
-    
-    .einkaufswagen {                /*auf Produktseite, wo man alle Produkte sieht*/
-        margin: auto;
-        width: 110px;
-        text-align: center;
-        padding: 10px;
-        border: 2px solid rgba(223, 223, 223, 0.904);
-        font-size: 14px;
-    }
-    
-    .einkaufswagen:hover {
-        background-color: rgba(223, 223, 223, 0.795);
-    }
-    
-    
-    
-    
-    .wunschliste {                      /*auf Produktseite, wo man alle Produkte sieht*/
-        margin: auto;
-        width: 25px;
-        text-align: center;
-        border: none;
-        font-size: 14px;
-    }
-    
-    .wunschliste:hover {
-        background-color: rgba(223, 223, 223, 0.795);
-    }
-    
 }
-
-
-
-
 
 
 
@@ -992,32 +932,4 @@
         font-size: 12px; /* Setzt die Schriftgröße auf 40 Pixel. */
     }
     
-    
-    
-    .einkaufswagen {                /*auf Produktseite, wo man alle Produkte sieht*/
-        margin: auto;
-        width: 110px;
-        text-align: center;
-        padding: 10px;
-        border: 2px solid rgba(223, 223, 223, 0.904);
-        font-size: 14px;
-    }
-    
-    .einkaufswagen:hover {
-        background-color: rgba(223, 223, 223, 0.795);
-    }
-    
-    
-    
-    .wunschliste {                      /*auf Produktseite, wo man alle Produkte sieht*/
-        margin: auto;
-        width: 25px;
-        text-align: center;
-        border: none;
-        font-size: 14px;
-    }
-    
-    .wunschliste:hover {
-        background-color: rgba(223, 223, 223, 0.795);
-    }
 }
