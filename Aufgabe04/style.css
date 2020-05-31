@@ -218,14 +218,7 @@
         border-radius: 1px;
         background-color: rgb(168, 129, 0);
     }
-    
-    
-    
-    
-    
-    
-    
-    
+     
     
     
     
@@ -330,13 +323,14 @@
         display: grid;
         grid-template-columns: auto auto auto;
         background-color: rgb(255, 255, 255);                            /*Hintergrund des Elements*/
-        padding: 10px;
+        padding-top: 10px;
         font-size: 15px;
         text-align: center;
     }
     
     .kategorie-container {                                     /*Umrandung*/
         border: 1px solid rgba(255, 255, 255, 0.507);
+        padding-bottom: 20px;
     }
     
     .kategorie-image {
@@ -349,7 +343,6 @@
         padding-bottom: 0px;
         padding-left: 0px;
         text-align: center;
-       
     }
     
     
@@ -842,6 +835,7 @@
     
     .kategorie-container {                                     /*Umrandung*/
         border: 1px solid rgba(255, 255, 255, 0.507);
+        padding-bottom: 20px;
     }
     
     .kategorie-image {
@@ -866,10 +860,10 @@
     
     .übersicht-row {                                           /*Element ist da drauf*/
         display: grid;
-        grid-template-columns: 250px 200px;
+        grid-template-columns: 200px 200px;
         background-color: white;                            /*Hintergrund des Elements*/
         padding: 50px;
-        text-align: center;
+        text-align: left;
     }
     
     .übersicht-container {                                     /*Umrandung*/
@@ -885,7 +879,8 @@
         padding-right: 0px;
         padding-bottom: 0px;
         padding-left: 0px;
-        margin-left: 100%;
+        margin-left: 70px;
+        margin-right: 10px;
         font-weight: bold;
         font-size: 20px;
         text-decoration: underline;
@@ -896,9 +891,9 @@
         padding-right: 10px;
         padding-bottom: 10px;
         padding-left: 10px;
-        width: 200px;
+        width: 150px;
         text-align: left;
-        margin-left: 200px;
+        margin-left: 70px;
         border-color: black; 
         display: block; 
         border: none;
@@ -911,7 +906,7 @@
         padding-left: 0px;
         text-align: center;
         font-size: 15px;
-        margin-left: 280px;
+        margin-left: 80px;
     }
     
     .link-anleitung {
@@ -921,8 +916,7 @@
         padding-bottom: 0px;
         padding-left: 0px;
         text-align: center;
-        margin-left: 100%;
-        /*font-size: 15px;*/
+        margin-left: 40%;
         border-color: black;
         height: 60px; /* Setzt die Höhe des Feldes auf 60 Pixel */
         font-size: 15px; /* Setzt die Schriftgröße auf 40 Pixel. */
@@ -1390,7 +1384,7 @@
     
     .übersicht-row {                                           /*Element ist da drauf*/
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 220px;
         background-color: white;                            /*Hintergrund des Elements*/
         padding: 10px;
         text-align: center;
@@ -1403,54 +1397,50 @@
     
     .übersicht-image {
         text-align: center;
-        width: 90px;
+        width: 100px;
+        margin-right: auto;
+        margin-left: auto;
     }
     
     .übersicht-name {
         padding-top: 10px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        margin-left: auto;
+        text-align: center;
+        margin-left: 30px;
+        width: 200px;
         font-weight: bold;
         font-size: 12px;
         text-decoration: underline;
     }
     
     .übersicht-beschreibung {
-        padding-top: 5px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        width: 50px;
-        text-align: left;
-        margin-left: 40px;
+        padding-top: 10px;
+        width: 200px;
+        text-align: center;
+        margin-left: 30px;
         border-color: black; 
         display: block; 
         border: none;
     }
-    
+        
     .übersicht-price {
         padding-top: 5px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
         text-align: center;
         font-size: 12px;
         margin-left: auto;
+        margin-right: auto;
     }
     
     .link-anleitung {
         padding-top: 5px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
         text-align: left;
         margin-left: 40px;
-        width: 40px;
+        width: 200px;
         display: block; 
         border: none;
-        font-size: 12px; /* Setzt die Schriftgröße auf 40 Pixel. */
+        font-size: 10px; 
     }
     
     
