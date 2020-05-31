@@ -20,7 +20,7 @@ var Inneneinrichtung;
     let fotohalter3 = {
         bild: "produktbilder/fotohalter_love.jpg",
         name: "Fotohalter-Love",
-        beschreibung: "Buchstaben aus Beton, Buchstaben: L, O, V, E, 8 Drähte für die Fotos enthalten",
+        beschreibung: "Buchstaben aus Beton, 8 Drähte für die Fotos enthalten",
         preis: "14.99€"
     };
     //Array erstellen, in dem alle Produkte aufgelistet sind
@@ -61,13 +61,13 @@ var Inneneinrichtung2;
     let holzgegenstaende1 = {
         bild: "produktbilder/holz_aufsteller.jpg",
         name: "Aufsteller",
-        beschreibung: "Aufsteller aus Holz für kleine Pflanzen, Lichterkette nicht enthalten",
+        beschreibung: "Aufsteller aus Holz für kleine Pflanzen",
         preis: "12.99€"
     };
     let holzgegenstaende2 = {
         bild: "produktbilder/holz_haenger.jpg",
         name: "Hänger",
-        beschreibung: "1 Holzscheibe mit 3 Schnüren, Zum aufhängen, Ablage für Blumen, Karten, etc.",
+        beschreibung: "1 Holzscheibe mit 3 Schnüren, Ablage für Blumen, Karten, etc.",
         preis: "20.50€"
     };
     let holzgegenstaende3 = {
@@ -171,7 +171,7 @@ var Inneneinrichtung4;
     let wanddekoration2 = {
         bild: "produktbilder/wanddeko_regal.jpg",
         name: "Wandregal",
-        beschreibung: "2 hängende Regale, Schnüre und Nägel enthalten, Aufhänger: Ring, Länge anpassbar",
+        beschreibung: "2 hängende Regale, Aufhänger: Ring, Länge anpassbar",
         preis: "15.50€"
     };
     let inneneinrichtung4Produkte = [wanddekoration1, wanddekoration2];
@@ -342,10 +342,6 @@ var DoItYourself;
         let newP = document.createElement("p");
         newP.innerHTML = doityourselfProdukte[index].beschreibung;
         document.getElementById("doityourself-produkt" + index)?.appendChild(newP);
-        //Button hinzufügen
-        let newLink = document.createElement("link");
-        newLink.innerHTML = "Link folgen";
-        document.getElementById("doityourself-produkt" + index)?.appendChild(newLink);
     }
 })(DoItYourself || (DoItYourself = {}));
 //# sourceMappingURL=script.js.map
