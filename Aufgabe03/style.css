@@ -14,7 +14,7 @@
     background: black;
     position: fixed;
     top: 0px;
-    width: 205px;                          /*Breite des Hintergrund, wo Schrift drauf ist*/
+    width: 250px;                          /*Breite des Hintergrund, wo Schrift drauf ist*/
     height: 12px;                          /*Höhe des Hintergrund, wo Schrift drauf ist*/
     text-align: center;                    /*schrift in der liste zentriert*/
     margin-top: 0px;                       /*ganz oben am rand*/
