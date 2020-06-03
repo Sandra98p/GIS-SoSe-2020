@@ -159,7 +159,7 @@
     
     h2 {
         color: rgb(167, 167, 167);
-        font-size: 12px;
+        font-size: 20px;
     }
     
     p {
@@ -167,138 +167,29 @@
         font-size: 15px;
     }
       
-    h3 {
-        color: black;
-        font-size: 20px;
-    }
-    
-    h4 {
-        color: rgb(202, 156, 5);
-        font-size: 15px;
-    }
+
+  
     
     
-    
-    
-    .product-grid { 
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .product-row {                                           /*Element ist da drauf*/
+    .inhalt{
+        width: 100%;
         display: grid;
-        grid-template-columns: auto;
-        background-color: rgb(255, 255, 255);              /*Hintergrund des Elements*/
-        padding: 10px;
-        font-size: 15px;
-        text-align: center;
-        margin-right: 10px;
-        margin-left: 10px;
-        width: auto;
-    }
+        padding: 5px 0px 00px 0px;
+        margin-top: -2.5%;
+        margin-bottom: 3%;
+        }
     
-    .product-container {                                      /*Umrandung*/
-        border: 1px solid rgba(255, 255, 255, 0.507);
-        padding-top: 20px;
-        width: auto;
-    }
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    
-    .product-image {
-        text-align: center;
-    }
-    
-    .product-status {
-        font-size: 12px;
-        background: #ffffff;
-        color: rgb(0, 0, 0);
-    }
-    
-    .product-name {
-        padding-top: 15px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        text-align: center;
-    }
-    
-    .product-price {
-        padding-top: 15px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        text-align: center;
-        font-size: 12px;
-    }
-    
-    .product-beschreibung {
-        padding-top: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        width: auto;
-        text-align: center;
-        border-color: black; 
-        display: block; 
-        border: none;
-    }
-    
-    
-    
-    
-    
-    .kategorie-grid {
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .kategorie-row {                                           /*Element ist da drauf*/
-        display: grid;
-        grid-template-columns: auto auto auto;
-        background-color: rgb(255, 255, 255);                            /*Hintergrund des Elements*/
-        padding: 10px;
-        font-size: 15px;
-        text-align: center;
-    }
-    
-    .kategorie-container {                                     /*Umrandung*/
-        border: 1px solid rgba(255, 255, 255, 0.507);
-    }
-    
-    .kategorie-image {
-        text-align: center;
-    }
-    
-    .kategorie-name {
-        padding-top: 15px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        text-align: center;
-       
+    .artikel {                                              
+        display: inline-block;
+        width:25%;
     }
 
-    .kategorie-beschreibung {
-        padding: 10px;
-        width: auto;
-        text-align: center;
-        border-color: black; 
-        display: block; 
-        border: none;
+    #inneneinrichtung #außeneinrichtung{
+    margin-top: 0;
+    Display: inline-grid;
+    grid-template-columns: auto auto auto auto;
     }
-    
-    .link-anleitung {
-        padding: 10px;
-        text-align: center;
-        border-color: black;
-        height: 60px; /* Setzt die Höhe des Feldes auf 60 Pixel */
-        font-size: 15px; /* Setzt die Schriftgröße auf 40 Pixel. */
-    }
-   
+
 }
 
 
@@ -489,13 +380,9 @@
     
     
     
+
     
-    .product-grid { 
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .product-row {                                           /*Element ist da drauf*/
+    .artikel {                                           /*Element ist da drauf*/
         display: grid;
         grid-template-columns: auto auto;
         background-color: rgb(255, 255, 255);                            /*Hintergrund des Elements*/
@@ -504,118 +391,6 @@
         text-align: center;
         margin-right: auto;
         margin-left: auto;
-    }
-    
-    .product-container {                                     /*Umrandung*/
-        border: 1px solid rgba(255, 255, 255, 0.507);
-        margin-top: 20px;
-    }
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    
-    .product-image {
-        text-align: center;
-    }
-    
-    .product-status {
-        font-size: 12px;
-        background: #ffffff;
-        color: rgb(0, 0, 0);
-    }
-    
-    .product-name {
-        padding: 15px 0px 0px;
-        padding-top: 15px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        text-align: center;
-    }
-    
-    .product-price {
-        padding-top: 15px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .product-beschreibung {
-        padding-top: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        width: auto;
-        text-align: center;
-        border-color: black; 
-        display: block; 
-        border: none;
-    }
-    
-    
-    
-    
-    
-    
-    .kategorie-grid {
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-    
-    .kategorie-row {                                           /*Element ist da drauf*/
-        display: grid;
-        grid-template-columns: auto auto;
-        background-color: rgb(255, 255, 255);                            /*Hintergrund des Elements*/
-        padding: 10px;
-        font-size: 15px;
-        text-align: center;
-     
-    }
-    
-    .kategorie-container {                                     /*Umrandung*/
-        border: 1px solid rgba(255, 255, 255, 0.507);
-    }
-    
-    .kategorie-image {
-        text-align: center;
-    }
-    
-    .kategorie-name {
-        padding-top: 15px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        text-align: center;
-       
-    }
-
-    .kategorie-beschreibung {
-        padding: 10px;
-        width: auto;
-        text-align: center;
-        border-color: black; 
-        display: block; 
-        border: none;
-    }
-    
- 
-    
-    .link-anleitung {
-        padding: 15px 0px 0px;
-        padding-top: 15px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        text-align: center;
-        margin-left: 100%;
-        /*font-size: 15px;*/
-        border-color: black;
-        height: 60px; /* Setzt die Höhe des Feldes auf 60 Pixel */
-        font-size: 15px; /* Setzt die Schriftgröße auf 40 Pixel. */
     }
     
 }
@@ -823,13 +598,9 @@
     
     
     
+
     
-    .product-grid { 
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .product-row {                                           /*Element ist da drauf*/
+    .artikel {                                           /*Element ist da drauf*/
         display: grid;
         grid-template-columns: auto;
         background-color: rgb(255, 255, 255);              /*Hintergrund des Elements*/
@@ -838,108 +609,6 @@
         text-align: center;
         margin-right: auto;
         margin-left: auto;
-    }
-    
-    .product-container {                                     /*Umrandung*/
-        border: 1px solid rgba(255, 255, 255, 0.507);
-        padding-top: 20px;
-    }
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    
-    .product-image {
-        text-align: center;
-    }
-    
-    .product-status {
-        font-size: 12px;
-        background: #ffffff;
-        color: rgb(0, 0, 0);
-    }
-    
-    .product-name {
-        padding: 15px 0px 0px;
-        padding-top: 15px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        text-align: center;
-    }
-    
-    .product-price {
-        padding-top: 15px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .product-beschreibung {
-        padding-top: 5px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        width: auto;
-        text-align: center;
-        border-color: black; 
-        display: block; 
-        border: none;
-    }
-    
-    
-    
-    
-    
-    
-    .kategorie-grid {
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .kategorie-row {                                           /*Element ist da drauf*/
-        display: grid;
-        grid-template-columns: auto;                            /*automatisches Anpassen der Elemente an Seite, Untereinander*/
-        background-color: rgb(255, 255, 255);                 /*Hintergrund des Elements*/
-        padding: 10px;
-        font-size: 15px;
-        text-align: center;
-       
-    }
-    
-    .kategorie-container {                                     /*Umrandung*/
-        border: 1px solid rgba(255, 255, 255, 0.507);
-        padding-top: 20px;
-    }
-    
-    .kategorie-image {
-        text-align: center;
-    }
-    
-    .kategorie-name {
-        padding-top: 15px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        text-align: center;
-       
-    }
-    
-    
-    .link-anleitung {
-        padding-top: 5px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        text-align: left;
-        margin-left: 40px;
-        width: 40px;
-        display: block; 
-        border: none;
-        font-size: 12px; /* Setzt die Schriftgröße auf 40 Pixel. */
     }
     
 }
