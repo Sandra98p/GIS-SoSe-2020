@@ -90,7 +90,7 @@ namespace Artikel {
     };
 
     let wanddekoration2: ArtikelProdukte = {
-        kategorie: "außeneinrichtung",
+        kategorie: "inneneinrichtung",
         bild: "produktbilder/wanddeko_regal.jpg",
         name: "Wandregal",
         beschreibung: "2 hängende Regale, Aufhänger: Ring, Länge anpassbar",
