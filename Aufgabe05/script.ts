@@ -13,7 +13,7 @@ namespace Artikel {
         kategorie: "inneneinrichtung",
         bild: "produktbilder/fotohalter.jpg",
         name: "Fotohalter",
-        beschreibung: "3 Betonhalter mit Klipper, für Fotos, Karten, etc.",
+        beschreibung: "3 Betonhalter für Fotos, Karten, etc.",
         preis: 12.99
     };
 
@@ -21,7 +21,7 @@ namespace Artikel {
         kategorie: "inneneinrichtung",
         bild: "produktbilder/fotohalter_kleiderbuegel.jpg",
         name: "Fotohalter-Kleiderbügel",
-        beschreibung: "6 Kleiderbügel, Farbe: silber, Wandschrauben nicht enthalten",
+        beschreibung: "6 Kleiderbügel, Farbe: silber",
         preis: 20.50
     };
 
@@ -29,7 +29,7 @@ namespace Artikel {
         kategorie: "inneneinrichtung",
         bild: "produktbilder/fotohalter_love.jpg",
         name: "Fotohalter-Love",
-        beschreibung: "Buchstaben aus Beton, 8 Drähte für die Fotos enthalten",
+        beschreibung: "Buchstaben aus Beton",
         preis: 14.99
     };
 
@@ -45,7 +45,7 @@ namespace Artikel {
         kategorie: "inneneinrichtung",
         bild: "produktbilder/holz_haenger.jpg",
         name: "Hänger",
-        beschreibung: "1 Holzscheibe mit 3 Schnüren, Ablage für Blumen, Karten, etc.",
+        beschreibung: "1 Holzscheibe mit 3 Schnüren",
         preis: 20.50
     };
 
@@ -53,7 +53,7 @@ namespace Artikel {
         kategorie: "inneneinrichtung",
         bild: "produktbilder/holz_sofatablett.jpg",
         name: "Sofatablett",
-        beschreibung: "Tablett zur Ablage von Fernbedienung, Zeitschrift, etc.",
+        beschreibung: "Tablett zur Ablage von Zeitschrift, etc.",
         preis: 14.99
     };
 
@@ -61,7 +61,7 @@ namespace Artikel {
         kategorie: "inneneinrichtung",
         bild: "produktbilder/vase_schrift.jpg",
         name: "Vase mit Schrift",
-        beschreibung: "Tablett zur Ablage von Fernbedienung, Zeitschrift, etc.",
+        beschreibung: "4 Vasen mit Schriftverzierung",
         preis: 14.99
     };
 
@@ -69,7 +69,7 @@ namespace Artikel {
         kategorie: "inneneinrichtung",
         bild: "produktbilder/vase_reagenzglas.jpg",
         name: "Reagenzglas",
-        beschreibung: "Tablett zur Ablage von Fernbedienung, Zeitschrift, etc.",
+        beschreibung: "Gebogener Halter mit Reagenzglas",
         preis: 14.99
     };
 
@@ -77,7 +77,7 @@ namespace Artikel {
         kategorie: "inneneinrichtung",
         bild: "produktbilder/vase_papier.jpg",
         name: "Vase mit Papierhülle",
-        beschreibung: "Tablett zur Ablage von Fernbedienung, Zeitschrift, etc.",
+        beschreibung: "Papierhüllen in versch. Farben",
         preis: 14.99
     };
 
@@ -85,7 +85,7 @@ namespace Artikel {
         kategorie: "inneneinrichtung",
         bild: "produktbilder/wanddeko_rund.jpg",
         name: "Spiegel mit Holzstrahlen",
-        beschreibung: "Spiegel mit Holzstrahlen, Spiegeldurchmesser: 30 cm",
+        beschreibung: "Spiegel mit Holzstrahlen",
         preis: 20.50
     };
 
@@ -93,7 +93,7 @@ namespace Artikel {
         kategorie: "inneneinrichtung",
         bild: "produktbilder/wanddeko_regal.jpg",
         name: "Wandregal",
-        beschreibung: "2 hängende Regale, Aufhänger: Ring, Länge anpassbar",
+        beschreibung: "2 hängende Regale",
         preis: 15.50
     };
 
@@ -125,7 +125,7 @@ namespace Artikel {
         kategorie: "außeneinrichtung",
         bild: "produktbilder/windlicht.jpg",
         name: "Windlicht",
-        beschreibung: "Einfaches windlicht mit kleiner Blume",
+        beschreibung: "Einfaches windlicht mit Blume",
         preis: 12.99
     };
 
