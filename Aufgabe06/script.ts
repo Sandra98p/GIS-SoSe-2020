@@ -181,7 +181,6 @@ namespace Artikel {
         newButton.addEventListener("click", einkaufenBtn);
         newButton.setAttribute("preis", artikelProdukte[index].preis.toString());
 
-
         switch (artikelProdukte[index].kategorie) {
             case "inneneinrichtung":
                 document.getElementById("inneneinrichtung")?.appendChild(newDiv);
@@ -200,20 +199,36 @@ namespace Artikel {
                 document.getElementById("produkt" + index)?.appendChild(newPreis);
                 document.getElementById("produkt" + index)?.appendChild(newButton);
                 break;
-        }
 
-        let artikelzaehler: number = 0;
-        let preis: number = 0;
-
-        function einkaufenBtn(_event: Event): void {
-            artikelzaehler++;
-            console.log(artikelzaehler);
-
-            preis += parseFloat((<HTMLButtonElement>_event.target)?.getAttribute("preis")!);
-            console.log(preis);
         }
     }
+
+
+    let artikelrechner: number = 0;
+    let preis: number = 0;
+
+    //Zähler für die Anzahl erstellen
+    let anzahlZaehler: HTMLParagraphElement = document.createElement("p");
+
+    //Blase erstellen beim Einkaufswagen
+    let produktAnzeige: HTMLDivElement = document.createElement("div");
+    produktAnzeige.id = "produktAnzeige";
+
+
+    function einkaufenBtn(_event: Event): void {
+        artikelrechner++;
+        console.log(artikelrechner);
+
+        preis += parseFloat((<HTMLButtonElement>_event.target)?.getAttribute("preis")!);
+        console.log(preis);
+
+        //Blase erstellen bei min. 1 Artikel
+        if (artikelrechner >= 0) {
+            document.getElementById("produktBlase")?.appendChild(produktAnzeige);
+        }
+
+        //Zahl in Blase anzeigen
+        anzahlZaehler.innerHTML = "" + artikelrechner;
+        document.getElementById("produktAnzeige")?.appendChild(anzahlZaehler);
+    }
 }
-
-
-

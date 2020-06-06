@@ -165,14 +165,26 @@ var Artikel;
                 document.getElementById("produkt" + index)?.appendChild(newButton);
                 break;
         }
-        let artikelzaehler = 0;
-        let preis = 0;
-        function einkaufenBtn(_event) {
-            artikelzaehler++;
-            console.log(artikelzaehler);
-            preis += parseFloat(_event.target?.getAttribute("preis"));
-            console.log(preis);
+    }
+    let artikelrechner = 0;
+    let preis = 0;
+    //Zähler für die Anzahl erstellen
+    let anzahlZaehler = document.createElement("p");
+    //Blase erstellen beim Einkaufswagen
+    let produktAnzeige = document.createElement("div");
+    produktAnzeige.id = "produktAnzeige";
+    function einkaufenBtn(_event) {
+        artikelrechner++;
+        console.log(artikelrechner);
+        preis += parseFloat(_event.target?.getAttribute("preis"));
+        console.log(preis);
+        //Blase erstellen bei min. 1 Artikel
+        if (artikelrechner >= 0) {
+            document.getElementById("produktBlase")?.appendChild(produktAnzeige);
         }
+        //Zahl in Blase anzeigen
+        anzahlZaehler.innerHTML = "" + artikelrechner;
+        document.getElementById("produktAnzeige")?.appendChild(anzahlZaehler);
     }
 })(Artikel || (Artikel = {}));
 //# sourceMappingURL=script.js.map
