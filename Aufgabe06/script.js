@@ -14,7 +14,7 @@ var Artikel;
         bild: "produktbilder/fotohalter_kleiderbuegel.jpg",
         name: "Fotohalter-Kleiderbügel",
         beschreibung: "6 Kleiderbügel, Farbe: silber",
-        preis: 20.50
+        preis: 20.55
     };
     let fotohalter3 = {
         kategorie: "inneneinrichtung",
@@ -35,7 +35,7 @@ var Artikel;
         bild: "produktbilder/holz_haenger.jpg",
         name: "Hänger",
         beschreibung: "1 Holzscheibe mit 3 Schnüren",
-        preis: 20.50
+        preis: 20.55
     };
     let holzgegenstaende3 = {
         kategorie: "inneneinrichtung",
@@ -70,21 +70,21 @@ var Artikel;
         bild: "produktbilder/wanddeko_rund.jpg",
         name: "Spiegel mit Holzstrahlen",
         beschreibung: "Spiegel mit Holzstrahlen",
-        preis: 20.50
+        preis: 20.55
     };
     let wanddekoration2 = {
         kategorie: "inneneinrichtung",
         bild: "produktbilder/wanddeko_regal.jpg",
         name: "Wandregal",
         beschreibung: "2 hängende Regale",
-        preis: 15.50
+        preis: 15.55
     };
     let palettenmoebel1 = {
         kategorie: "außeneinrichtung",
         bild: "produktbilder/palette_gartenbank.jpg",
         name: "Gartenbank mit Tisch",
         beschreibung: "Gartenbank mit Armstützen und Tisch",
-        preis: 300.50
+        preis: 300.55
     };
     let palettenmoebel2 = {
         kategorie: "außeneinrichtung",
@@ -119,7 +119,7 @@ var Artikel;
         bild: "produktbilder/windlicht_zeitung.jpg",
         name: "Windlicht",
         beschreibung: "Windlichtglas mit Zeitung",
-        preis: 15.50
+        preis: 15.55
     };
     //Array erstellen, in dem alle Produkte aufgelistet sind
     let artikelProdukte = [fotohalter1, fotohalter2, fotohalter3, holzgegenstaende1, holzgegenstaende2, holzgegenstaende3, vase1, vase2, vase3, wanddekoration1, wanddekoration2, palettenmoebel1, palettenmoebel2, palettenmoebel3, windlichter1, windlichter2, windlichter3];
@@ -145,6 +145,8 @@ var Artikel;
         //Button hinzufügen
         let newButton = document.createElement("button");
         newButton.innerHTML = "Jetzt kaufen";
+        newButton.addEventListener("click", einkaufenBtn);
+        newButton.setAttribute("preis", artikelProdukte[index].preis.toString());
         switch (artikelProdukte[index].kategorie) {
             case "inneneinrichtung":
                 document.getElementById("inneneinrichtung")?.appendChild(newDiv);
@@ -162,6 +164,14 @@ var Artikel;
                 document.getElementById("produkt" + index)?.appendChild(newPreis);
                 document.getElementById("produkt" + index)?.appendChild(newButton);
                 break;
+        }
+        let artikelzaehler = 0;
+        let preis = 0;
+        function einkaufenBtn(_event) {
+            artikelzaehler++;
+            console.log(artikelzaehler);
+            preis += parseFloat(_event.target?.getAttribute("preis"));
+            console.log(preis);
         }
     }
 })(Artikel || (Artikel = {}));

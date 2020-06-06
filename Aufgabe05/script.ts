@@ -156,20 +156,25 @@ namespace Artikel {
         let newDiv: HTMLDivElement = document.createElement("div");
         newDiv.setAttribute("class", "artikel");
         newDiv.setAttribute("id", "produkt" + index);
+
         //Produktbild hinzufügen
         let newBild: HTMLElement = document.createElement("img");
         newBild.setAttribute("src", artikelProdukte[index].bild);
         newBild.setAttribute("alt", "produkt");
         newBild.setAttribute("class", "produktbild");
+
         //Produktbezeichnung hinzufügen
         let newH3: HTMLHeadingElement = document.createElement("h3");
         newH3.innerHTML = artikelProdukte[index].name;
-        //Produkt_beschreibung hinzufügen
+
+        //Produktbeschreibung hinzufügen
         let newP: HTMLParagraphElement = document.createElement("p");
         newP.innerHTML = artikelProdukte[index].beschreibung;
-        // _preis hinzufügen
+
+        //Preis hinzufügen
         let newPreis: HTMLHeadingElement = document.createElement("h4");
         newPreis.innerHTML = artikelProdukte[index].preis + "€";
+
         //Button hinzufügen
         let newButton: HTMLButtonElement = document.createElement("button");
         newButton.innerHTML = "Jetzt kaufen";
