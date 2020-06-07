@@ -92,27 +92,6 @@
     #hauptmenue-buttons a.activesite {          /*zeigt aktuelle seite schwarz an*/
         color: rgb(61, 61, 61);
     }
-    
-    
-    
-    .dropdown {                             /*Aufklappmenü*/
-        position: relative;
-        display: inline-block;
-    }
-      
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 12px 16px;
-        z-index: 1;
-    }
-      
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
 
 
     
@@ -168,21 +147,36 @@
         font-size: 15px;
     }
       
-
-  
-    #logo {
-        margin-top: 12%;
-        width: 200px;
+    img[alt=logobild]{
+        position: absolute;
+        top: 5px;
+        left: 0;  
+        margin-top: 0%;
+        width: 150px;
     }
+  
+   
     
-    .inhalt {
+    .inhaltInneneinrichtung {
         width: auto;
         display: inline-block;
-        padding: 20px;
-        margin-top: 0%;
+        padding: 10px;
+        margin-top: 15%;
         margin-bottom: 3%;
-        margin-left: 10px;
-        margin-right: 10px;
+    }
+
+    .inhaltAußeneinrichtung {
+        width: auto;
+        display: inline-block;
+        padding: 10px;
+        margin-top: -4%;
+        margin-bottom: 3%;
+    }
+
+    #inneneinrichtung, #außeneinrichtung {
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
     }
 
     .artikel {                                              
@@ -192,20 +186,15 @@
         padding: 10px;
     }
 
-    #inneneinrichtung, #außeneinrichtung {
-        margin-top: 0;
-        display: inline-block;
-        grid-template-columns: auto auto auto auto;
-        width: auto;
-    }
-
     #produktAnzeige {
         background-color: rgb(255, 255, 255);
         border-radius: 20%;
-        margin-top: 20px;
+        margin-top: 0px;
         width: 20px;
         height: 20px;
-        margin-right: 2px;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 }
 
@@ -321,27 +310,6 @@
     
     
     
-    .dropdown {                             /*Aufklappmenü*/
-        position: relative;
-        display: inline-block;
-    }
-      
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 12px 16px;
-        z-index: 1;
-    }
-      
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    
-    
-    
     
     
     .fa-heart {                               /*Icon*/
@@ -422,26 +390,6 @@
        width: 250px;
    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -540,27 +488,6 @@
     
     #hauptmenue-buttons a.activesite {          /*zeigt aktuelle seite schwarz an*/
         color: rgb(61, 61, 61);
-    }
-    
-    
-    
-    .dropdown {                             /*Aufklappmenü*/
-        position: relative;
-        display: inline-block;
-    }
-      
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 150px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 12px 15px;
-        z-index: 1;
-    }
-      
-    .dropdown:hover .dropdown-content {
-        display: block;
     }
     
     

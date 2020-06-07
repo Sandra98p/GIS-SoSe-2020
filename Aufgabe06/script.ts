@@ -199,7 +199,6 @@ namespace Artikel {
                 document.getElementById("produkt" + index)?.appendChild(newPreis);
                 document.getElementById("produkt" + index)?.appendChild(newButton);
                 break;
-
         }
     }
 
@@ -231,4 +230,30 @@ namespace Artikel {
         anzahlZaehler.innerHTML = "" + artikelrechner;
         document.getElementById("produktAnzeige")?.appendChild(anzahlZaehler);
     }
+
+    //Kategorien einblenden/ausblenden
+    function handleCategoryClick(this: HTMLElement, _click: MouseEvent): void {
+        switch (this.getAttribute("id")) {
+            case "inneneinrichtungbtn":
+                inneneinrichtungVerweis();
+                break;
+            case "außeneinrichtungbtn":
+                außeneinrichtungVerweis();
+                break;
+        }
+        function inneneinrichtungVerweis(): void {
+            (<HTMLElement>document.getElementById("inneneinrichtung")).style.display = "block";
+            (<HTMLElement>document.getElementById("außeneinrichtung")).style.display = "none";
+        }
+        function außeneinrichtungVerweis(): void {
+            (<HTMLElement>document.getElementById("außeneinrichtung")).style.display = "block";
+            (<HTMLElement>document.getElementById("inneneinrichtung")).style.display = "none";
+        }
+    }
+    //Erstellen einer Variable, Buttonverlinkung
+    let inneneinrichtungButton: HTMLElement = <HTMLElement>document.querySelector("#inneneinrichtungbtn");
+    inneneinrichtungButton.addEventListener("click", handleCategoryClick.bind(inneneinrichtungButton));
+
+    let außeneinrichtungButton: HTMLElement = <HTMLElement>document.querySelector("#außeneinrichtungbtn");
+    außeneinrichtungButton.addEventListener("click", handleCategoryClick.bind(außeneinrichtungButton));
 }

@@ -186,5 +186,29 @@ var Artikel;
         anzahlZaehler.innerHTML = "" + artikelrechner;
         document.getElementById("produktAnzeige")?.appendChild(anzahlZaehler);
     }
+    //Kategorien einblenden/ausblenden
+    function handleCategoryClick(_click) {
+        switch (this.getAttribute("id")) {
+            case "inneneinrichtungbtn":
+                inneneinrichtungVerweis();
+                break;
+            case "außeneinrichtungbtn":
+                außeneinrichtungVerweis();
+                break;
+        }
+        function inneneinrichtungVerweis() {
+            document.getElementById("inneneinrichtung").style.display = "block";
+            document.getElementById("außeneinrichtung").style.display = "none";
+        }
+        function außeneinrichtungVerweis() {
+            document.getElementById("außeneinrichtung").style.display = "block";
+            document.getElementById("inneneinrichtung").style.display = "none";
+        }
+    }
+    //Erstellen einer Variable, Buttonverlinkung
+    let inneneinrichtungButton = document.querySelector("#inneneinrichtungbtn");
+    inneneinrichtungButton.addEventListener("click", handleCategoryClick.bind(inneneinrichtungButton));
+    let außeneinrichtungButton = document.querySelector("#außeneinrichtungbtn");
+    außeneinrichtungButton.addEventListener("click", handleCategoryClick.bind(außeneinrichtungButton));
 })(Artikel || (Artikel = {}));
 //# sourceMappingURL=script.js.map
