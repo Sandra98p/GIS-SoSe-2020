@@ -156,48 +156,46 @@ namespace Artikel {
         let newDiv: HTMLDivElement = document.createElement("div");
         newDiv.setAttribute("class", "artikel");
         newDiv.setAttribute("id", "produkt" + index);
+        document.getElementById("inneneinrichtung")?.appendChild(newDiv);
 
         //Produktbild hinzufügen
         let newBild: HTMLElement = document.createElement("img");
         newBild.setAttribute("src", artikelProdukte[index].bild);
         newBild.setAttribute("alt", "produkt");
         newBild.setAttribute("class", "produktbild");
+        document.getElementById("produkt" + index)?.appendChild(newBild);
 
         //Produktbezeichnung hinzufügen
         let newH3: HTMLHeadingElement = document.createElement("h3");
         newH3.innerHTML = artikelProdukte[index].name;
+        document.getElementById("produkt" + index)?.appendChild(newH3);
 
         //Produktbeschreibung hinzufügen
         let newP: HTMLParagraphElement = document.createElement("p");
         newP.innerHTML = artikelProdukte[index].beschreibung;
+        document.getElementById("produkt" + index)?.appendChild(newP);
 
         //Preis hinzufügen
         let newPreis: HTMLHeadingElement = document.createElement("h4");
         newPreis.innerHTML = artikelProdukte[index].preis + "€";
+        document.getElementById("produkt" + index)?.appendChild(newPreis);
 
         //Button hinzufügen
         let newButton: HTMLButtonElement = document.createElement("button");
         newButton.innerHTML = "Jetzt kaufen";
         newButton.addEventListener("click", einkaufenBtn);
         newButton.setAttribute("preis", artikelProdukte[index].preis.toString());
+        document.getElementById("produkt" + index)?.appendChild(newButton);
 
         switch (artikelProdukte[index].kategorie) {
             case "inneneinrichtung":
-                document.getElementById("inneneinrichtung")?.appendChild(newDiv);
-                document.getElementById("produkt" + index)?.appendChild(newBild);
-                document.getElementById("produkt" + index)?.appendChild(newH3);
-                document.getElementById("produkt" + index)?.appendChild(newP);
-                document.getElementById("produkt" + index)?.appendChild(newPreis);
-                document.getElementById("produkt" + index)?.appendChild(newButton);
+                let getContainerInneneinrichtung: HTMLElement = document.getElementById("inneneinrichtung")!;
+                getContainerInneneinrichtung.appendChild(newDiv);
                 break;
 
             case "außeneinrichtung":
-                document.getElementById("außeneinrichtung")?.appendChild(newDiv);
-                document.getElementById("produkt" + index)?.appendChild(newBild);
-                document.getElementById("produkt" + index)?.appendChild(newH3);
-                document.getElementById("produkt" + index)?.appendChild(newP);
-                document.getElementById("produkt" + index)?.appendChild(newPreis);
-                document.getElementById("produkt" + index)?.appendChild(newButton);
+                let getContainerAußeneinrichtung: HTMLElement = document.getElementById("außeneinrichtung")!;
+                getContainerAußeneinrichtung.appendChild(newDiv);
                 break;
         }
     }
@@ -242,11 +240,11 @@ namespace Artikel {
                 break;
         }
         function inneneinrichtungVerweis(): void {
-            (<HTMLElement>document.getElementById("inneneinrichtung")).style.display = "block";
+            (<HTMLElement>document.getElementById("inneneinrichtung")).style.display = "inline-grid";
             (<HTMLElement>document.getElementById("außeneinrichtung")).style.display = "none";
         }
         function außeneinrichtungVerweis(): void {
-            (<HTMLElement>document.getElementById("außeneinrichtung")).style.display = "block";
+            (<HTMLElement>document.getElementById("außeneinrichtung")).style.display = "inline-grid";
             (<HTMLElement>document.getElementById("inneneinrichtung")).style.display = "none";
         }
     }

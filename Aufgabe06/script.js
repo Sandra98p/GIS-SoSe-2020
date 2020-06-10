@@ -128,41 +128,39 @@ var Artikel;
         let newDiv = document.createElement("div");
         newDiv.setAttribute("class", "artikel");
         newDiv.setAttribute("id", "produkt" + index);
+        document.getElementById("inneneinrichtung")?.appendChild(newDiv);
         //Produktbild hinzufügen
         let newBild = document.createElement("img");
         newBild.setAttribute("src", artikelProdukte[index].bild);
         newBild.setAttribute("alt", "produkt");
         newBild.setAttribute("class", "produktbild");
+        document.getElementById("produkt" + index)?.appendChild(newBild);
         //Produktbezeichnung hinzufügen
         let newH3 = document.createElement("h3");
         newH3.innerHTML = artikelProdukte[index].name;
+        document.getElementById("produkt" + index)?.appendChild(newH3);
         //Produktbeschreibung hinzufügen
         let newP = document.createElement("p");
         newP.innerHTML = artikelProdukte[index].beschreibung;
+        document.getElementById("produkt" + index)?.appendChild(newP);
         //Preis hinzufügen
         let newPreis = document.createElement("h4");
         newPreis.innerHTML = artikelProdukte[index].preis + "€";
+        document.getElementById("produkt" + index)?.appendChild(newPreis);
         //Button hinzufügen
         let newButton = document.createElement("button");
         newButton.innerHTML = "Jetzt kaufen";
         newButton.addEventListener("click", einkaufenBtn);
         newButton.setAttribute("preis", artikelProdukte[index].preis.toString());
+        document.getElementById("produkt" + index)?.appendChild(newButton);
         switch (artikelProdukte[index].kategorie) {
             case "inneneinrichtung":
-                document.getElementById("inneneinrichtung")?.appendChild(newDiv);
-                document.getElementById("produkt" + index)?.appendChild(newBild);
-                document.getElementById("produkt" + index)?.appendChild(newH3);
-                document.getElementById("produkt" + index)?.appendChild(newP);
-                document.getElementById("produkt" + index)?.appendChild(newPreis);
-                document.getElementById("produkt" + index)?.appendChild(newButton);
+                let getContainerInneneinrichtung = document.getElementById("inneneinrichtung");
+                getContainerInneneinrichtung.appendChild(newDiv);
                 break;
             case "außeneinrichtung":
-                document.getElementById("außeneinrichtung")?.appendChild(newDiv);
-                document.getElementById("produkt" + index)?.appendChild(newBild);
-                document.getElementById("produkt" + index)?.appendChild(newH3);
-                document.getElementById("produkt" + index)?.appendChild(newP);
-                document.getElementById("produkt" + index)?.appendChild(newPreis);
-                document.getElementById("produkt" + index)?.appendChild(newButton);
+                let getContainerAußeneinrichtung = document.getElementById("außeneinrichtung");
+                getContainerAußeneinrichtung.appendChild(newDiv);
                 break;
         }
     }
@@ -197,11 +195,11 @@ var Artikel;
                 break;
         }
         function inneneinrichtungVerweis() {
-            document.getElementById("inneneinrichtung").style.display = "block";
+            document.getElementById("inneneinrichtung").style.display = "inline-grid";
             document.getElementById("außeneinrichtung").style.display = "none";
         }
         function außeneinrichtungVerweis() {
-            document.getElementById("außeneinrichtung").style.display = "block";
+            document.getElementById("außeneinrichtung").style.display = "inline-grid";
             document.getElementById("inneneinrichtung").style.display = "none";
         }
     }
