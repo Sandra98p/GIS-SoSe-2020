@@ -46,7 +46,6 @@
     
     
     
-    
     #websitename {                          
         color: rgb(219, 168, 0);
         font-family: monospace;
@@ -138,6 +137,7 @@
         font-size: 13px;
     }
 
+
     p {                               /*Beschreibung*/
         color: rgb(202, 156, 5);
         font-size: 15px;
@@ -191,6 +191,14 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+      
+    .warenliste {
+        padding-top: 20%;
+        padding-bottom: 0%;
+    }
+
+
 }
 
 
