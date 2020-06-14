@@ -31,9 +31,11 @@ namespace Artikel {
     }
 
     async function communicate(_url: RequestInfo): Promise<void> {
+        console.log("Start");
         let response: Response = await fetch(_url);
         console.log("Response", response);
         articles = await response.json();
+        console.log("End");
         buildArticles();
     }
 
@@ -82,7 +84,7 @@ namespace Artikel {
             //Button hinzufügen
             let newButton: HTMLButtonElement = document.createElement("button");
             newButton.innerHTML = "Jetzt kaufen";
-            newButton.addEventListener("click", einkaufenBtn);
+            newButton.addEventListener("click", einkaufenBtn.bind(articles[index]));
             newButton.setAttribute("name", articles[index].name);
             newButton.setAttribute("img", articles[index].bild);
             newButton.setAttribute("beschreibung", articles[index].beschreibung);

@@ -16,9 +16,11 @@ var Artikel;
         communicate(url);
     }
     async function communicate(_url) {
+        console.log("Start");
         let response = await fetch(_url);
         console.log("Response", response);
         articles = await response.json();
+        console.log("End");
         buildArticles();
     }
     function sichernImLocalStorage(_inputArticle) {
@@ -58,7 +60,7 @@ var Artikel;
             //Button hinzufügen
             let newButton = document.createElement("button");
             newButton.innerHTML = "Jetzt kaufen";
-            newButton.addEventListener("click", einkaufenBtn);
+            newButton.addEventListener("click", einkaufenBtn.bind(articles[index]));
             newButton.setAttribute("name", articles[index].name);
             newButton.setAttribute("img", articles[index].bild);
             newButton.setAttribute("beschreibung", articles[index].beschreibung);

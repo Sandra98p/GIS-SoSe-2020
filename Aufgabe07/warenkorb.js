@@ -33,22 +33,22 @@ var Artikel;
         console.log(newDiv.id);
         //Bild erstellen
         let bildElement = document.createElement("img");
-        newDiv.appendChild(bildElement);
         bildElement.src = _inputArticle.bild;
+        newDiv.appendChild(bildElement);
         console.log(bildElement);
         //Namen geben
         let name = document.createElement("h3");
-        newDiv.appendChild(name);
         name.innerHTML = _inputArticle.name;
+        newDiv.appendChild(name);
         //Preis festlegen
         let price = document.createElement("p");
-        newDiv.appendChild(price);
         price.innerHTML = "" + _inputArticle.preis;
         newDiv.setAttribute("preis", price.innerHTML);
+        newDiv.appendChild(price);
         //Button
         let kaufen = document.createElement("button");
-        newDiv.appendChild(kaufen);
         kaufen.innerHTML = "Löschen";
+        newDiv.appendChild(kaufen);
         kaufen.addEventListener("click", handleRemoveArticle.bind(_inputArticle));
     }
     function handleRemoveArticle(_event) {
