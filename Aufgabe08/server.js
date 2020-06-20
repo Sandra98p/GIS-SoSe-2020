@@ -4,10 +4,11 @@ exports.A08Server = void 0;
 const Http = require("http");
 var A08Server;
 (function (A08Server) {
-    console.log("Starting server");
+    console.log("Starting server"); //Server wird gestartet
     let port = Number(process.env.PORT);
-    if (!port)
-        port = 8100;
+    if (!port) //Port ist nicht vorhanden bzw. nicht gefunden, dann ...
+        port = 8100; //setze ihn auf den Wert 8100
+    //Variable wird erstellt
     let server = Http.createServer();
     server.addListener("request", handleRequest);
     server.addListener("listening", handleListen);
@@ -23,4 +24,4 @@ var A08Server;
         _response.end();
     }
 })(A08Server = exports.A08Server || (exports.A08Server = {}));
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=server.js.map

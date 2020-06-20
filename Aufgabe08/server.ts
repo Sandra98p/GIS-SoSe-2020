@@ -1,17 +1,18 @@
 import * as Http from "http";
 
 export namespace A08Server {
-    console.log("Starting server");
+    console.log("Starting server");     //Server wird gestartet
     let port: number = Number(process.env.PORT);
-    if (!port)
-        port = 8100;
+    if (!port)      //Port ist nicht vorhanden bzw. nicht gefunden, dann ...
+        port = 8100;    //setze ihn auf den Wert 8100
 
+    //Variable wird erstellt
     let server: Http.Server = Http.createServer();
     server.addListener("request", handleRequest);
     server.addListener("listening", handleListen);
     server.listen(port);
 
-    function handleListen(): void {
+    function handleListen(): void {     //Server hört zu
         console.log("Listening");
     }
 
