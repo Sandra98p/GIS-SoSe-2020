@@ -20,8 +20,8 @@ var A08Server;
     function handleRequest(_request, _response) {
         console.log("I hear voices!");
         //Kopf und Parameter erstellen
-        _response.setHeader("content-type", "text/html; charset=utf-8");
-        _response.setHeader("Access-Control-Allow-Origin", "*");
+        _response.setHeader("content-type", "text/html; charset=utf-8"); //Zeichencodierung wird angegeben, Typ = text/html
+        _response.setHeader("Access-Control-Allow-Origin", "*"); //gibt an, ob die Antwort mit dem angeforderten Code vom angegebenen Ursprung geteilt werden kann
         //Serverantwort url
         _response.write(_request.url);
         //Ende der Nachricht
