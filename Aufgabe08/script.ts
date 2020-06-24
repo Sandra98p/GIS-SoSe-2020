@@ -7,7 +7,10 @@ namespace Aufgabe08 {
         let url: string = "https://gistestsose2020.herokuapp.com";
         let query: URLSearchParams = new URLSearchParams(<any>formData);
         url = url + "?" + query.toString();
-        await fetch(url);
+        
+        let response: Response = await fetch(url);
+        let responseString: string = await response.text();
+        responseString = response + query.toString();
         for (let entry of query) {
             console.log(entry);
             console.log("name: " + entry[0]);

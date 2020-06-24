@@ -8,7 +8,9 @@ var Aufgabe08;
         let url = "https://gistestsose2020.herokuapp.com";
         let query = new URLSearchParams(formData);
         url = url + "?" + query.toString();
-        await fetch(url);
+        let response = await fetch(url);
+        let responseString = await response.text();
+        responseString = response + query.toString();
         for (let entry of query) {
             console.log(entry);
             console.log("name: " + entry[0]);
