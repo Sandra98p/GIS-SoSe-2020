@@ -10,7 +10,7 @@ var Aufgabe08;
         url = url + "?" + query.toString();
         let response = await fetch(url);
         let responseString = await response.text();
-        responseString = response + query.toString();
+        console.log(responseString);
         for (let entry of query) {
             console.log(entry);
             console.log("name: " + entry[0]);
