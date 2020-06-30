@@ -25,7 +25,7 @@ var A09Server;
             let path = url.pathname;
             if (path == "/html") {
                 for (let key in url.query) {
-                    _response.write(key + ":" + url.query[key] + "<br/>");
+                    _response.write(key + ":" + url.query[key] + "<br>");
                 }
             }
             else if (path == "/json") {
