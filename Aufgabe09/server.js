@@ -18,8 +18,9 @@ var A09Server;
     }
     function handleRequest(_request, _response) {
         console.log("Hallöchen");
+        //Zwei header setzen
         _response.setHeader("content-type", "text/html; charset=utf-8");
-        _response.setHeader("Access-Control-Allow-Origin", "*");
+        _response.setHeader("Access-Control-Allow-Origin", "*"); //legt fest von wem die anfragen kommen, * bedeutet alles
         if (_request.url) {
             let url = Url.parse(_request.url, true);
             let path = url.pathname;
