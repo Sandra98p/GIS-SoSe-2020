@@ -1,0 +1,69 @@
+body {
+    list-style-type: none;
+    font-family: monospace;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    text-align: center;                     /*schrift im body zentriert*/
+ 
+}
+
+
+.navigation {
+    position: fixed;
+    background-color: #a8def7;
+    width: 100%;
+    height: 100px;
+    top: -15px;
+    left: 0px;
+    right: 0px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+
+button {
+    background-color: rgb(76, 187, 187);
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    
+}
+
+a {
+    text-decoration: none;
+
+}
+
+#ueberschrift a {
+    color: black;
+}
+
+h1 {
+    font-weight: lighter;
+    font-family:  'Courier new';
+    text-align: center;
+}
+
+h2 {
+    font-weight: lighter;
+    font-family:  'Courier new';
+}
+
+h3 {
+    font-weight: lighter;
+    font-family:  'Courier new';
+}
+
+#sonne, #eiscreme, #foto {
+    width: 30px;
+    height: 30px;
+    margin-top: -12px;
+}
+
+
+.eingegangeneBestellungen {
+    margin-top: 120px;
+}

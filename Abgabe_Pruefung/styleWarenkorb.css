@@ -1,0 +1,243 @@
+body {
+    list-style-type: none;
+    font-family: monospace;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    text-align: center;                     /*schrift im body zentriert*/
+ 
+}
+
+
+.navigation {
+    position: fixed;
+    background-color: #a8def7;
+    width: 100%;
+    height: 100px;
+    top: -15px;
+    left: 0px;
+    right: 0px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+
+button {
+    background-color: rgb(76, 187, 187);
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    
+}
+
+a {
+    text-decoration: none;
+
+}
+
+#ueberschrift a {
+    color: black;
+}
+
+
+.produktbild {
+    height: 100px;
+    width: 110px;
+}
+
+
+h1 {
+    font-weight: lighter;
+    font-family:  'Courier new';
+    text-align: center;
+}
+
+h2 {
+    font-weight: lighter;
+    font-family:  'Courier new';
+}
+
+h3 {
+    font-weight: lighter;
+    font-family:  'Courier new';
+}
+
+
+
+
+.bestellungUebersicht {
+    padding-top: 100px;
+}
+
+.bestellungDaten {
+    padding-top: 10px;
+    margin-top: 0px;
+}
+.bestellungZahlung {
+    padding-top: 10px;
+    height: 15%;
+}
+
+.bestellungSchicken {
+    padding-top: 50px;
+}
+
+
+#allesloeschen {
+    padding: 5px;
+    font-family: monospace;
+    color: white;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: -37px;
+    margin-left: 80%;
+    cursor: pointer;
+}
+
+#bestellenbutton {
+    padding: 10px;
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 30%;
+    margin-left: 35%;
+    cursor: pointer;
+}
+  
+.grid-container-warenkorb {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 20px;
+}
+
+
+.grid-item-warenkorb2 {
+    margin-top: 17%;
+}
+
+
+
+
+#preisinsgesamt {
+    margin-left: -70%;
+    margin-top: -16px;
+    font-family: monospace;
+}
+
+#sonne, #eiscreme, #foto {
+    width: 30px;
+    height: 30px;
+    margin-top: -12px;
+}
+
+
+
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px){           /*mittlere Displays - tablet*/
+    .grid-container-warenkorb {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 20px;
+    }
+
+    .grid-item-warenkorb2 {
+        margin-top: 23%;
+    }
+
+    #preisinsgesamt {
+        margin-right: -40%;
+        margin-top: -16px;
+    }
+
+    
+    #allesloeschen {
+        padding: 5px;
+        font-family: monospace;
+        color: white;
+        width: 150px;
+        border-radius: 20px;
+        font-size: 12px;
+        background-color: rgba(0,0,0,0.5);
+        margin-top: -37px;
+        margin-left: 75%;
+    }
+
+    #bestellenbutton {
+        padding: 10px;
+        font-size: 20px;
+        font-family: monospace;
+        color: white;
+        width: 200px;
+        border-radius: 20px;
+        background-color: rgba(0,0,0,0.5);
+        margin-left: 140%;
+        margin-top: -205%;
+    }
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px){           /*kleine Displays - handys*/
+    .grid-container-warenkorb {
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        width: auto;
+    }
+    .grid-item-warenkorb1 {
+        width: 100%;
+        grid-template-columns: auto auto;
+    }
+    
+    #preisinsgesamt {
+        margin-left: -60%;
+        margin-top: -16px;
+        font-size: 10px;
+    }
+
+    
+    #allesloeschen {
+        padding: 3px;
+        font-family: monospace;
+        color: white;
+        width: 80px;
+        border-radius: 20px;
+        font-size: 9px;
+        background-color: rgba(0,0,0,0.5);
+        margin-top: -30px;
+        margin-left: 200px;
+    }
+
+    #sonne, #eiscreme, #foto {
+        width: 20px;
+        height: 20px;
+        margin-top: -12px;
+    }
+
+    #bestellenbutton {
+        padding: 10px;
+        font-size: 15px;
+        font-family: monospace;
+        color: white;
+        width: 180px;
+        border-radius: 20px;
+        background-color: rgba(0,0,0,0.5);
+        margin-top: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ice-Time</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styleWarenkorb.css">
+    <script src="scriptWarenkorb.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <div>
+                <h1 id="ueberschrift"><a href="startseite.html">Ice Cream Time</a></h1>
+            </div>
+            <div class="icons">
+                <img src="Bilder/sonne.png" alt id="sonne">
+                <img src="Bilder/eiscreme.png" alt id="eiscreme">
+                <img src="Bilder/foto.png" alt id="foto">
+            </div>
+            <p id="preisinsgesamt"></p>
+            <p id="allesloeschen">Produkte entfernen</p>
+        </div>
+    </header>
+    <form action="https://gistestsose2020.herokuapp.com" method="GET">
+        <div class="grid-container-warenkorb">
+            <div class="grid-item-warenkorb1">
+                <div class="bestellungUebersicht">
+                    <h2>Deine Auswahl:</h2>
+                    <div class="bestellungsAnzeige"></div>
+                </div>
+            </div>
+            <div class="grid-item-warenkorb2">
+
+                <fieldset>
+                    <legend>
+                        <h2>Gib deine Daten an:</h2>
+                    </legend>
+                    <div id="formularName">
+                        <input type="text" name="firstname" placeholder="Vorname">
+                        <input type="text" name="lastname" placeholder="Nachname">
+                    </div>
+                    <div id="formularAdresse">
+                        <br>
+                        <label>Adresse:</label>
+                        <br>
+                        <input type="text" name="adresse" placeholder="Straße und Hausnummer">
+                        <input type="text" name="ort" placeholder="Ort">
+                    </div>
+                </fieldset>
+                <div class="bestellungZahlung">
+                    <fieldset>
+                        <legend>
+                            <h2>Zahlungsart:</h2>
+                        </legend>
+                        <label for="paypal">
+                            <input type="radio" name="payp" id="paypal" value="paypal"> Paypal
+                        </label>
+                        <label for="rechnung">
+                            <input type="radio" name="rechn" id="rechnung" value="rechnung"> Rechnung
+                        </label>
+                        <label for="ueberweisung">
+                            <input type="radio" name="ueberw" id="ueberweisung" value="ueberweisung"> Überweisung
+                        </label>
+                    </fieldset>
+                </div>
+
+            </div>
+            <div class="grid-item-warenkorb3">
+                <div class="bestellungSchicken">
+                    <button type="button" id="bestellenbutton">Bestellung aufgeben</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <p id="responseServer"></p>
+
+
+    <footer>
+        <br>
+        <br>
+        <br>
+        Lass dir dein Eis schmecken :)
+        <br>
+        <br>
+        <a href="verkaeufer.html">zur Inhaberseite </a>
+    </footer>
+</body>
+
+</html>

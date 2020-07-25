@@ -1,0 +1,123 @@
+[
+    {
+        "kategorie": "eissorten",
+        "bild": "Bilder/vanilla.png",
+        "name": "Vanille",
+        "preis": 1.05
+    },
+    {
+        "kategorie": "eissorten",
+        "bild": "Bilder/Strawberry.png",
+        "name": "Erdbeere",
+        "preis": 1.05
+    },
+    {
+        "kategorie": "eissorten",
+        "bild": "Bilder/chocolate.png",
+        "name": "Schokolade",
+        "preis": 1.05
+    },
+    {
+        "kategorie": "eissorten",
+        "bild": "Bilder/raspberry.png",
+        "name": "Himbeere",
+        "preis": 1.15
+    },
+    {
+        "kategorie": "eissorten",
+        "bild": "Bilder/blueberry.png",
+        "name": "Blaubeere",
+        "preis": 1.15
+    },
+    {
+        "kategorie": "eissorten",
+        "bild": "Bilder/Lime.png",
+        "name": "Zitrone",
+        "preis": 1.15
+    },
+    {
+        "kategorie": "eissorten",
+        "bild": "Bilder/blackberry.png",
+        "name": "Brombeere",
+        "preis": 1.15
+    },
+    {
+        "kategorie": "eissorten",
+        "bild": "Bilder/peach.png",
+        "name": "Pfirsich",
+        "preis": 1.25
+    },
+    {
+        "kategorie": "verpackung",
+        "bild": "Bilder/waffle_small2.png",
+        "name": "Waffel klein",
+        "preis": 0.45
+    },
+    {
+        "kategorie": "verpackung",
+        "bild": "Bilder/waffle_medium.png",
+        "name": "Waffel groß",
+        "preis": 0.55
+    },
+    {
+        "kategorie": "verpackung",
+        "bild": "Bilder/waffle_sprinkles.png",
+        "name": "Waffel Streusel",
+        "preis": 0.65
+    },
+    {
+        "kategorie": "verpackung",
+        "bild": "Bilder/cup_dots.png",
+        "name": "Becher Punkte",
+        "preis": 0.35
+    },
+    {
+        "kategorie": "verpackung",
+        "bild": "Bilder/cup_stripes.png",
+        "name": "Becher Streifen",
+        "preis": 0.35
+    },
+    {
+        "kategorie": "verpackung",
+        "bild": "Bilder/cup_stripes2.png",
+        "name": "Becher Streifen",
+        "preis": 0.35
+    },
+    {
+        "kategorie": "extras",
+        "bild": "Bilder/chocolate_squares.png",
+        "name": "Schokolade",
+        "preis": 0.35
+    },
+    {
+        "kategorie": "extras",
+        "bild": "Bilder/sprinkles1.png",
+        "name": "Streusel",
+        "preis": 0.25
+    },
+    {
+        "kategorie": "extras",
+        "bild": "Bilder/sprinkles2.png",
+        "name": "Streusel",
+        "preis": 0.25
+    },
+    {
+        "kategorie": "extras",
+        "bild": "Bilder/cherry.png",
+        "name": "Kirschen",
+        "preis": 0.45
+    },
+    {
+        "kategorie": "extras",
+        "bild": "Bilder/smarties.png",
+        "name": "M&M's",
+        "preis": 0.55
+    },
+    {
+        "kategorie": "extras",
+        "bild": "Bilder/chocolate_stripes.png",
+        "name": "Schokoladenstreifen",
+        "preis": 0.35
+    }
+   
+]

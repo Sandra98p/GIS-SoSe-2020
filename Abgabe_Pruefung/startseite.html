@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ice-Cream-Time</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="scriptWarenkorb.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <div>
+                <h1 id="ueberschrift">Ice-Cream-Time</h1>
+            </div>
+            <div class="icons">
+                <img src="Bilder/sonne.png" alt id="sonne">
+                <img src="Bilder/eiscreme.png" alt id="eiscreme">
+                <img src="Bilder/foto.png" alt id="foto">
+            </div>
+            <p id="kaufeAnzeige">Anzahl:</p>
+        </div>
+
+        <div class="overlay">
+            <div>
+                <h4 id="yourChoice">Your Choice:</h4>
+                <div id="bestellanzeige">
+                </div>
+            </div>
+            <div class="zumWarenkorb"><a
+                    href="warenkorb.html">W&nbsp;&nbsp;-<br>A&nbsp;&nbsp;K<br>R&nbsp;&nbsp;O<br>E&nbsp;&nbsp;R<br>N&nbsp;&nbsp;B<br><i
+                        class="fa fa-arrow-right"></i>
+                </a></div>
+        </div>
+    </header>
+   
+
+
+    <main>
+
+        <div class="inhaltTop">
+            <div>
+                <img id="titelbild" src="Bilder/eis.png" alt>
+                <br>
+                <br>
+                <div class="buttonauswahl" style="vertical-align:middle"><span><a href="#losgehts">Make your
+                            own</a></span></div>
+            </div>
+        </div>
+        <div class="bestellungUebersicht">
+            <h2>Deine Auswahl:</h2>
+            <div class="bestellungsAnzeige"></div>
+        </div>
+        <br>
+        <h2 id="losgehts">Let's start!</h2>
+        <br>
+        <div class="navigationAuswahl">
+            <a href="#sorte" id="eissortenbtn">
+                <h2 id="sorte">Eissorten</h2>
+            </a>
+            <a href="#verp" id="verpackungbtn">
+                <h2 id="verp">Verpackung</h2>
+            </a>
+            <a href="#ext" id="extrasbtn">
+                <h2 id="ext">Extras</h2>
+            </a>
+        </div>
+
+        <div class="inhaltFlavors">
+            <div id="eissorten"></div>
+        </div>
+
+        <div class="inhaltBoxing">
+            <div id="verpackung"></div>
+        </div>
+
+        <div class="inhaltToppings">
+            <div id="extras"></div>
+        </div>
+
+    </main>
+
+    
+
+</body>
+
+</html>
