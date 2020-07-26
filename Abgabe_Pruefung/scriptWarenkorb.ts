@@ -31,7 +31,7 @@ namespace IceCreamTime {
             let item: Items = <Items>JSON.parse(artikelJson);
 
             gesamtpreis += item.preis;
-            
+            createContent(item);
         }
         setGesamtpreis();
     }
@@ -66,6 +66,7 @@ namespace IceCreamTime {
         loeschen.innerHTML = "Löschen";
         newDiv.appendChild(loeschen);
         loeschen.addEventListener("click", handleRemoveArticle.bind(_inputArticle));
+
     }
 
 

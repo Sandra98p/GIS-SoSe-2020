@@ -11,7 +11,8 @@ namespace IceCreamTime {
     let kaufeAnzeige: HTMLDivElement = document.createElement("div");
     kaufeAnzeige.id = "kaufeAnzeige";
 
-    let inhaltsDiv: HTMLDivElement;
+    let anzeigeArtikel: HTMLDivElement = document.createElement("div");
+    anzeigeArtikel.id = "anzeigeArtikel";
 
 
     let items: Items[] = [];
@@ -28,7 +29,8 @@ namespace IceCreamTime {
     function init(): void {
         let url: string = "artikel.json";
         communicate(url);
-
+        anzeigeArtikel = <HTMLDivElement>document.getElementById("bestellanzeige");
+        bestellanzeige();
     }
 
     async function communicate(_url: RequestInfo): Promise<void> {
@@ -40,6 +42,36 @@ namespace IceCreamTime {
         buildArticles();
     }
 
+    function bestellanzeige(): void {
+        anzeigeArtikel.innerHTML = "";
+        preisrechner = 0;
+        for (let index: number = 0; index < localStorage.length; index++) {
+            let key: string = <string>localStorage.key(index);
+            let artikeljson: string = <string>localStorage.getItem(key);
+            let item: Items = <Items>JSON.parse(artikeljson);
+
+            preisrechner += item.preis;
+            auswahlArtikelSeite(item);
+
+        }
+    }
+
+    function auswahlArtikelSeite(_inputArticle: Items): void {
+        //Div für die Auswahlspeicherung
+        let newDiv: HTMLDivElement = document.createElement("div");
+        anzeigeArtikel.appendChild(newDiv);
+        newDiv.id = _inputArticle.name;
+        console.log(newDiv.id);
+        //Name soll angezeigt werden
+        let name: HTMLParagraphElement = document.createElement("p");
+        name.innerHTML = _inputArticle.name;
+        newDiv.appendChild(name);
+        //Preis anzeigen lassen
+        let preisDiv: HTMLParagraphElement = document.createElement("p");
+        preisDiv.innerHTML = "" + _inputArticle.preis;
+        newDiv.setAttribute("preis", preisDiv.innerHTML);
+        newDiv.appendChild(preisDiv);
+    }
 
     function saveinlocalstorage(_inputArticle: Items): void {
         //Artikel bauen
@@ -49,6 +81,7 @@ namespace IceCreamTime {
         localStorage.setItem(key, itemString);
         console.log(localStorage);
 
+        bestellanzeige();
     }
 
     //Produktschleife
@@ -119,7 +152,6 @@ namespace IceCreamTime {
             preisrechner += this.preis;
             console.log(preisrechner.toFixed(2));
 
-        
 
             //Blase erstellen bei min. 1 Artikel
             if (warenanzahl >= 0) {
@@ -129,10 +161,10 @@ namespace IceCreamTime {
             //Zahl in Blase anzeigen
             auswahlAnzeige.innerHTML = "" + warenanzahl;
             document.getElementById("kaufeAnzeige")?.appendChild(auswahlAnzeige);
-
-           
-
         }
+
+
+
 
 
         //Kategorien einblenden/ausblenden
@@ -177,3 +209,5 @@ namespace IceCreamTime {
     }
 
 }
+
+

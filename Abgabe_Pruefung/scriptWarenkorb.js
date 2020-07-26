@@ -24,6 +24,7 @@ var IceCreamTime;
             let artikelJson = localStorage.getItem(key);
             let item = JSON.parse(artikelJson);
             gesamtpreis += item.preis;
+            createContent(item);
         }
         setGesamtpreis();
     }

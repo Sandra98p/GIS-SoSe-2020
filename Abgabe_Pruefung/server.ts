@@ -52,7 +52,6 @@ export namespace PruefungsaufgabeServer {
             }
 
             if (url.pathname == "/get") {
-
                 let jsonString: string = JSON.stringify(url.query);
                 _response.write(jsonString);
             }

@@ -8,13 +8,16 @@ var IceCreamTime;
     //Produktzähler in grauem Feld hinzufügen
     let kaufeAnzeige = document.createElement("div");
     kaufeAnzeige.id = "kaufeAnzeige";
-    let inhaltsDiv;
+    let anzeigeArtikel = document.createElement("div");
+    anzeigeArtikel.id = "anzeigeArtikel";
     let items = [];
     window.addEventListener("load", init);
     //Json Daten werden vom Server gezogen
     function init() {
         let url = "artikel.json";
         communicate(url);
+        anzeigeArtikel = document.getElementById("bestellanzeige");
+        bestellanzeige();
     }
     async function communicate(_url) {
         console.log("Willkommen beim Eis-Verkauf");
@@ -24,12 +27,40 @@ var IceCreamTime;
         console.log("End");
         buildArticles();
     }
+    function bestellanzeige() {
+        anzeigeArtikel.innerHTML = "";
+        preisrechner = 0;
+        for (let index = 0; index < localStorage.length; index++) {
+            let key = localStorage.key(index);
+            let artikeljson = localStorage.getItem(key);
+            let item = JSON.parse(artikeljson);
+            preisrechner += item.preis;
+            auswahlArtikelSeite(item);
+        }
+    }
+    function auswahlArtikelSeite(_inputArticle) {
+        //Div für die Auswahlspeicherung
+        let newDiv = document.createElement("div");
+        anzeigeArtikel.appendChild(newDiv);
+        newDiv.id = _inputArticle.name;
+        console.log(newDiv.id);
+        //Name soll angezeigt werden
+        let name = document.createElement("p");
+        name.innerHTML = _inputArticle.name;
+        newDiv.appendChild(name);
+        //Preis anzeigen lassen
+        let preisDiv = document.createElement("p");
+        preisDiv.innerHTML = "" + _inputArticle.preis;
+        newDiv.setAttribute("preis", preisDiv.innerHTML);
+        newDiv.appendChild(preisDiv);
+    }
     function saveinlocalstorage(_inputArticle) {
         //Artikel bauen
         let itemString = JSON.stringify(_inputArticle);
         let key = "" + _inputArticle.name; //in localstorage packen
         localStorage.setItem(key, itemString);
         console.log(localStorage);
+        bestellanzeige();
     }
     //Produktschleife
     function buildArticles() {
